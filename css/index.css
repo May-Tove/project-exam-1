@@ -1,0 +1,64 @@
+.home-hero{
+    background: linear-gradient(rgba(0 ,0,0,0.2), rgba(0,0,0,0)), url(../images/brazilStatue.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 80vh;
+}
+
+.home-hero h1, .home-hero h2{
+    color: white;
+    text-align: center;
+    max-width: 90vw;
+    margin: 0 auto;
+}
+
+.home-hero h1{
+    text-transform: uppercase;
+    padding-top: 10rem;
+    padding-bottom: 1rem;
+}
+
+.home-hero h2{
+    font-family: "catamaran", sans-serif;
+    font-weight: 50;
+    letter-spacing: .1rem;
+}
+
+.latest-posts .btn{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin: 3rem;
+}
+
+.latest-posts h1{
+    text-align: center;
+    color: white;
+    padding: 3rem;
+    text-transform: capitalize;
+}
+
+.post-container{
+    background: linear-gradient(rgba(0 ,0,0,0), rgba(0,0,0,0.8)), url(../images/icelandHorses.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+    border-radius: 20px;
+    max-width: 85vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: .2rem;
+    padding: 1.2rem;
+    color: white;
+}
+
+.post-container a{
+    text-decoration: none;
+    color: white;
+    font-family:"catamaran", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+}
+

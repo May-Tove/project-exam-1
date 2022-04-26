@@ -1,0 +1,11 @@
+.specific-post{
+    padding-top: 200px;
+    max-width: 85vw;
+    margin: 0 auto;
+    color: white;
+}
+
+.detail-container img{
+    width: 100%;
+    object-fit: cover;
+}
