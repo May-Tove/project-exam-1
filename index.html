@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/media.css">
 </head>
 <body>
     <header class="navbar">
@@ -19,7 +20,7 @@
             <nav class="main-menu menu-overlay">
                 <ul class="nav-links">
                     <span class="close-menu"><img src="./images/closeIcon.png" alt=""></span>
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html" class="active">Home</a></li>
                     <li><a href="blog.html">Blog</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
@@ -35,15 +36,36 @@
         </section>
         <section class="latest-posts">
             <h1>latest posts</h1>
-            <div class="post-container">
-                <h2>Iceland</h2>
-                <p>Lorem, ipsum dolor sit amet.</p>
-                <a href="post-specific.html">Read more <img src="./images/arrow.png" alt=""></a>
-            </div>
-            <a href="blog.html" class="btn">View all posts</a>
+                <div class="carousel-container"> 
+                    <div class="slide">
+                        <h2>Italy</h2>
+                        <p>Lorem ipsum dolor sit amet</p>
+                        <a href="post.html?id=${post.id}">Read More</a>
+                    </div>
+                    <div class="slide">
+                        <h2>Italy</h2>
+                        <p>Lorem ipsum dolor sit amet</p>
+                        <a href="post.html?id=${post.id}">Read More</a>
+                    </div>
+                    <div class="slide">
+                        <h2>Italy</h2>
+                        <p>Lorem ipsum dolor sit amet</p>
+                        <a href="post.html?id=${post.id}">Read More</a>
+                    </div>
+                    <div class="slide">
+                        <h2>Italy</h2>
+                        <p>Lorem ipsum dolor sit amet</p>
+                        <a href="post.html?id=${post.id}">Read More</a>
+                    </div>
+                    <div class="btn-container">
+                        <button class="carousel-button prev" aria-label="previous slide">&#8249;</button>
+                        <button class="carousel-button next" aria-label="next slide">&#8250;</button>
+                    </div>
+                </div>
         </section>
     </main>
     <script src="js/script.js" type="module"></script>
+    <script src="js/index.js" type="module"></script>
     <footer></footer>
 </body>
 </html>

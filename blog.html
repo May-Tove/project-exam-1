@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/blog.css">
+    <link rel="stylesheet" href="css/media.css">
 </head>
 <body>
     <header class="navbar">
@@ -20,7 +21,7 @@
                 <ul class="nav-links">
                     <span class="close-menu"><img src="./images/closeIcon.png" alt=""></span>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="blog.html" class="active">Blog</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
@@ -30,10 +31,35 @@
     </header>
     <main>
         <section class="blog-hero">
-            <h1>Blog posts</h1>
+            <h1>Blog</h1>
+        </section>
+        <div class="breadcrumbs">
+            <nav>
+                <a href="index.html">Home /</a>
+                <a href="blog.html" class="active">Blog</a>
+            </nav>
+        </div>
+        <section class="blog-paragraph">
+            <h2>All our travels</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus saepe eum eos voluptas mollitia. Porro inventore incidunt, a debitis adipisci, quae, iusto maiores odit veritatis reprehenderit dolor commodi tempore quam!</p>
+        </section>
+        <section class="category-container">
+            <div>
+                <label for="categories">Categories:</label>
+                <select name="categories" class="category-select">
+                    <option value="10" class="category" id="all">All</option>
+                    <option value="8" class="category" id="africa">Africa</option>
+                    <option value="4" class="category" id="asia">Asia</option>
+                    <option value="5" class="category" id="europe">Europe</option>
+                    <option value="6" class="category" id="north-america">North-America</option>
+                    <option value="9" class="category" id="oceania">Oceania</option>
+                    <option value="7" class="category" id="south-america">South-America</option>
+                </select>
+            </div>
         </section>
         <section class="all-posts">
             <div class="post-container"></div>
+            <p class="view-more-btn">View more</p>
         </section>
     </main>
     <script src="js/script.js" type="module"></script>

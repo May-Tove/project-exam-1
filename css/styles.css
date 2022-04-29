@@ -5,7 +5,7 @@
 }
 
 body{
-    background-color: #1E2025;
+    background-color: #EDECE4;
 }
 
 p{
@@ -21,9 +21,15 @@ a{
 }
 
 .btn{
-    padding: .7rem 1.3rem;
+    padding: .5rem 1.5rem;
     background-color: #AD323C;
-    border-radius: 30px;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: .1rem;
+    font-family: "catamaran", sans-serif;
+    cursor: pointer;
 }
 
 /* navigation */
@@ -32,14 +38,19 @@ a{
     align-items: center;
     width: 100%;
     height: 80px;
-    background-color: black;
+    background-color: transparent;
     position: fixed;
     z-index: 1000;
+    transition: all 0.3s;
+}
+
+.navbar-change{
+    background-color: #C4C3B9;
 }
 
 .navbar-center{
     width: 100%;
-    max-width: 1170px;
+    max-width: 1300px;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -79,4 +90,17 @@ cursor: pointer;
 position: absolute;
 top: 2rem;
 left: 2rem;
+}
+
+.breadcrumbs{
+padding: 3rem 0rem;
+}
+
+.breadcrumbs a{
+    color: black;
+    text-transform: capitalize;
+}
+
+.active{
+    font-weight: bold;
 }

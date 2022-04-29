@@ -10,12 +10,10 @@ async function getPosts(url) {
 
     posts.forEach(function (post) {
       postContainer.innerHTML += `<div class="post">   
-                                    <div style="background-image: linear-gradient(rgba(0 ,0,0,0), rgba(0,0,0,0.5)), url(${post._embedded["wp:featuredmedia"][0].source_url})" class="featured-img">
-                                    <a href="post.html?id=${post.id}">
+                                    <div style="background-image: linear-gradient(rgba(0 ,0,0,0), rgba(0,0,0,0.7)), url(${post._embedded["wp:featuredmedia"][0].source_url})" class="featured-img">
                                     <h2>${post.title.rendered}</h2>
                                     <p>${post.excerpt.rendered}</p>
-                                    <p>Read More</p>
-                                    </a>
+                                    <a href="post.html?id=${post.id}">Read More</a>
                                     </div>
                                     </div>`;
     });
@@ -25,4 +23,15 @@ async function getPosts(url) {
 }
 getPosts(baseUrl);
 
-/*<img src=${post._embedded["wp:featuredmedia"][0].source_url} alt="${post._embedded["wp:featuredmedia"][0].alt_text}" class="product-img"/>*/
+const categories = document.querySelector(".category-select");
+categories.onchange = function () {
+  let newUrl;
+  const categoryChosen = categories.value;
+  if (categories.id === "all") {
+    newUrl = baseUrl;
+  } else {
+    newUrl = baseUrl + `&category=${categories.value}`;
+  }
+  postContainer.innerHTML = "";
+  getPosts(newUrl);
+};

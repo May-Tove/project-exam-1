@@ -24,41 +24,63 @@
     letter-spacing: .1rem;
 }
 
-.latest-posts .btn{
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   margin: 3rem;
-}
-
 .latest-posts h1{
     text-align: center;
-    color: white;
     padding: 3rem;
-    text-transform: capitalize;
+    text-transform: uppercase;
 }
 
-.post-container{
-    background: linear-gradient(rgba(0 ,0,0,0), rgba(0,0,0,0.8)), url(../images/icelandHorses.jpg);
-    background-position: center;
-    background-size: cover;
+.carousel-container{
+    width: 85vw;
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+}
+
+.slide{
+    width: 260px;
     height: 400px;
     border-radius: 20px;
-    max-width: 85vw;
-    margin: 0 auto;
+    background: linear-gradient(rgba(0 ,0,0,0.2), rgba(0,0,0,0)), url(../images/brazilStatue.jpg);
+    background-size: cover;
+    background-position: center;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    gap: .2rem;
-    padding: 1.2rem;
     color: white;
+    padding: 1rem;
 }
 
-.post-container a{
-    text-decoration: none;
-    color: white;
-    font-family:"catamaran", sans-serif;
-    text-transform: uppercase;
-    letter-spacing: .1rem;
+.carousel-button{
+    position: absolute;
+    z-index: 2;
+    background: none;
+    border: none;
+    font-size: 3rem;
+    top: 170px;
+    color: rgba(255,255,255, .5);
+    cursor: pointer;
+    border-radius: .25rem;
+    padding: .5rem;
+    background-color: rgba(0,0,0, .1);
 }
 
+.carousel-button:hover, .carousel-button:focus{
+    color: white;
+    background-color: rgba(0, 0, 0, .2);
+}
+
+.carousel-button:focus{
+    outline: 1px solid black;
+}
+
+.carousel-button.prev{
+    left: 1rem;
+}
+
+.carousel-button.next{
+    right: 1rem;
+}

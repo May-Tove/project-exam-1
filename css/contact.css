@@ -1,0 +1,71 @@
+.contact-hero{
+    background: linear-gradient(rgba(0 ,0,0,0.3), rgba(0,0,0,0)), url(../images/petar-avramoski-I3W2Ex0IV_8-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    padding-bottom: 3rem;
+}
+
+.breadcrumbs, .contact-container{
+    width: 85vw;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.contact-container{
+    padding-bottom: 3rem;
+}
+
+.input-group{
+    margin-bottom: 30px;
+  }
+  
+  .input-group input, textarea{
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid black;
+    border-radius: var(--borderRadius);
+    background: transparent;
+    cursor: text;
+    font-family: inherit;
+    font-size: 0.9rem;
+  }
+  
+  textarea{
+    min-height: 120px;
+  }
+
+  .form-error, .success-message{
+      display: none;
+  }
+
+  .form-error{
+      color: red;
+  }
+
+  .success-message{
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+      color: green;
+  }
+
+
+@media (min-width: 1024px){
+    .contact-container{
+        display: flex;
+        gap: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    .form-container{
+        min-width: 600px;
+    }
+}

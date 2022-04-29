@@ -21,3 +21,13 @@ const closeMenu = () => {
 };
 
 closeMenu();
+
+const header = document.querySelector(".navbar");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 100) {
+    header.classList.add("navbar-change");
+  } else {
+    header.classList.remove("navbar-change");
+  }
+});
