@@ -1,5 +1,5 @@
 .blog-hero{
-    background: linear-gradient(rgba(0 ,0,0,0.3), rgba(0,0,0,0)), url(../images/gaddafi-rusli-2ueUnL4CkV8-unsplash.jpg);
+    background: linear-gradient(rgba(0 ,0,0,0.3), rgba(0,0,0,0)), url(../images/valdemaras-d-khbjgGAerPU-unsplash.jpg);
     background-position: center;
     background-size: cover;
     height: 70vh;
@@ -11,13 +11,6 @@
     text-transform: uppercase;
     color: white;
     padding-bottom: 3rem;
-}
-
-.breadcrumbs{
-    padding-top: 2rem;
-    width: 85vw;
-    max-width: 1000px;
-    margin: 0 auto;
 }
 
 .blog-paragraph{

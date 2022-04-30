@@ -1,4 +1,5 @@
-const baseUrl = "https://mayth.one/project-exam/wp-json/wp/v2/posts?_embed";
+const baseUrl =
+  "https://mayth.one/project-exam/wp-json/wp/v2/destinations?acf_format=standard";
 const postContainer = document.querySelector(".post-container");
 
 async function getPosts(url) {
@@ -10,7 +11,7 @@ async function getPosts(url) {
 
     posts.forEach(function (post) {
       postContainer.innerHTML += `<div class="post">   
-                                    <div style="background-image: linear-gradient(rgba(0 ,0,0,0), rgba(0,0,0,0.7)), url(${post._embedded["wp:featuredmedia"][0].source_url})" class="featured-img">
+                                    <div style="background-image: linear-gradient(rgba(0 ,0,0,0), rgba(0,0,0,0.7)), url(${post.acf.featured_image})" class="featured-img">
                                     <h2>${post.title.rendered}</h2>
                                     <p>${post.excerpt.rendered}</p>
                                     <a href="post.html?id=${post.id}">Read More</a>
