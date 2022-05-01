@@ -1,4 +1,4 @@
-const postContainer = document.querySelector(".detail-container");
+const postContainer = document.querySelector(".specific-post");
 const heroContainer = document.querySelector(".post-hero");
 const postActiveLink = document.querySelector(".post-detail");
 const postTitle = document.querySelector(".post-title");
@@ -35,38 +35,57 @@ function displayPost(details) {
 
   postContainer.innerHTML = `<div class="published-section">
                                 <p>Published by: ${details.acf.author} on the ${details.acf.date_posted}</p>
-                                </div>
-                                <div class="welcome-section">
-                                    <h1>${details.acf.main_heading}</h1>
-                                    <p>${details.acf.first_paragraph}</p>
-                                    <p>${details.acf.second_paragraph}</p>
-                                </div>
-                                <section class="memory-section">
+                            </div>
+                            <div class="welcome-section">
+                                <h1>${details.acf.main_heading}</h1>
+                                <p>${details.acf.first_paragraph}</p>
+                                <p>${details.acf.second_paragraph}</p>
+                            </div>
+                            <div class="memory-section">
+                                <div class="memory-card">
                                     <h2>${details.acf.memory_heading}</h2>
                                     <p>${details.acf.memory_paragraph}</p>
-                                    <img src="${details.acf.memory_image}" alt="">
-                                </section>
-                                <section class="city-section">
-                                    <div class="city-1">
-                                        <h3>${details.acf.city_heading_1}</h3>
-                                        <p>${details.acf.city_paragraph_1}</p>
-                                        <img src="${details.acf.image_1}" alt="">
+                                </div>
+                                    <img src="${details.acf.memory_image}" alt="" class="memory-img">
+                            </div>
+                            <div class="city-section">
+                                <h1 class="section-title">Tips on places to visit and where to stay</h1>
+                                <div class="city-1">
+                                    <div class="city-text">
+                                    <h3>${details.acf.city_heading_1}</h3>
+                                    <p>${details.acf.city_paragraph_1}</p>
+                                    <h4>${details.acf.sub_heading_1}</h4>
+                                    <p>${details.acf.sub_paragraph_1}</p>
                                     </div>
-                                    <div class="city-2">
+                                    <img src="${details.acf.image_1}" alt="">
+                                </div>
+                                <div class="city-2">
+                                    <div class="city-text">
                                     <h3>${details.acf.city_heading_2}</h3>
                                     <p>${details.acf.city_paragraph_2}</p>
+                                    <h4>${details.acf.sub_heading_2}</h4>
+                                    <p>${details.acf.sub_paragraph_2}</p>
+                                    </div>
                                     <img src="${details.acf.image_2}" alt="">
                                 </div>
                                 <div class="city-3">
-                                <h3>${details.acf.city_heading_3}</h3>
-                                <p>${details.acf.city_paragraph_3}</p>
-                                <img src="${details.acf.image_3}" alt="">
+                                    <div class="city-text">
+                                    <h3>${details.acf.city_heading_3}</h3>
+                                    <p>${details.acf.city_paragraph_3}</p>
+                                    <h4>${details.acf.sub_heading_3}</h4>
+                                    <p>${details.acf.sub_paragraph_3}</p>
+                                    </div>
+                                    <img src="${details.acf.image_3}" alt="">
+                                </div>
+                                <div class="city-4">
+                                    <div class="city-text">
+                                    <h3>${details.acf.city_heading_4}</h3>
+                                    <p>${details.acf.city_paragraph_4}</p>
+                                    <h4>${details.acf.sub_heading_4}</h4>
+                                    <p>${details.acf.sub_paragraph_4}</p>
+                                    </div>
+                                    <img src="${details.acf.image_4}" alt="">
+                                </div>
                             </div>
-                            <div class="city-4">
-                            <h3>${details.acf.city_heading_4}</h3>
-                            <p>${details.acf.city_paragraph_4}</p>
-                            <img src="${details.acf.image_4}" alt="">
-                        </div>
-                                </section>
                                     `;
 }

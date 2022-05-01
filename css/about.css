@@ -13,7 +13,7 @@
     padding-bottom: 3rem;
 }
 
-.about-paragraph{
+.about-container{
     width: 85vw;
     max-width: 1000px;
     margin: 0 auto;
@@ -35,13 +35,16 @@
 }
 
 
-@media (min-width: 799px) {
+@media (min-width: 1000px) {
+    .about-container > .about-section{
+        position: relative;
+    }
     .about-card{
         background-color: white;
         padding: 3rem;
-        width: 470px;
+        max-width: 470px;
         position: absolute;
-        top: 100%;
+        top: 100px;
         z-index: 2;
     }
 
@@ -50,11 +53,9 @@
         max-width: 600px;
         height: 700px;
         object-fit: cover;
-        position: relative;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        margin: 0 400px;
+        position: absolute;
+        right: 0px;
+        top: 0px;
     }
 }
 
