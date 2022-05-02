@@ -34,7 +34,8 @@ function displayPost(details) {
                             </div>`;
 
   postContainer.innerHTML = `<div class="published-section">
-                                <p>Published by: ${details.acf.author} on the ${details.acf.date_posted}</p>
+  <img src="${details.acf.author_img}" alt="" class="memory-img">
+                                <p>Published ${details.acf.date_posted} by ${details.acf.author} </p>
                             </div>
                             <div class="welcome-section">
                                 <h1>${details.acf.main_heading}</h1>
@@ -45,6 +46,7 @@ function displayPost(details) {
                                 <div class="memory-card">
                                     <h2>${details.acf.memory_heading}</h2>
                                     <p>${details.acf.memory_paragraph}</p>
+                                    <p>${details.acf.memory_paragraph_2}</p>
                                 </div>
                                     <img src="${details.acf.memory_image}" alt="" class="memory-img">
                             </div>

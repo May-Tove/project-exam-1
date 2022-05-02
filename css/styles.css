@@ -14,7 +14,7 @@ body{
     letter-spacing: .2rem;
 }
 
-h2{
+h1, h2{
     font-family: "kudryashev-d-contrast", sans-serif;
     font-style: normal;
     font-weight: 600;
@@ -70,7 +70,11 @@ a{
 }
 
 .navbar-change{
-    background-color: #C4C3B9;
+    background-color: white;
+}
+
+.navbar-change a{
+    color: black;
 }
 
 .navbar-center{
