@@ -3,6 +3,12 @@
     background-position: center;
     background-size: cover;
     height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding-bottom: 3rem;
 }
 
 .home-hero h1, .home-hero h2{
@@ -13,9 +19,12 @@
 }
 
 .home-hero h1{
-    text-transform: uppercase;
-    padding-top: 10rem;
-    padding-bottom: 1rem;
+    font-family: "kudryashev-d-contrast", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    letter-spacing: .2rem;
+    text-transform: capitalize;
+    font-size: 2.5rem;
 }
 
 .home-hero h2{
@@ -24,10 +33,9 @@
     letter-spacing: .1rem;
 }
 
-.latest-posts h1{
+.latest-posts h2{
     text-align: center;
     padding: 3rem;
-    text-transform: uppercase;
 }
 
 .carousel-container{

@@ -23,6 +23,13 @@
     padding-bottom: 3rem;
 }
 
+.contact-text{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-bottom: 3rem;
+}
+
 .input-group{
     margin-bottom: 30px;
   }
@@ -35,7 +42,8 @@
     border-radius: var(--borderRadius);
     background: transparent;
     cursor: text;
-    font-family: inherit;
+    font-family: "catamaran", sans-serif;
+    font-weight: 100;
     font-size: 0.9rem;
   }
   
@@ -49,12 +57,16 @@
 
   .form-error{
       color: red;
+      font-family: "catamaran", sans-serif;
+      font-weight: 100;
   }
 
   .success-message{
       margin-bottom: 1rem;
       font-size: 1.5rem;
       color: green;
+      font-family: "catamaran", sans-serif;
+      font-weight: 100;
   }
 
 

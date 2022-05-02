@@ -8,8 +8,33 @@ body{
     background-color: #EDECE4;
 }
 
-p{
+.hero h1{
     font-family: "catamaran", sans-serif;
+    font-weight: bold;
+    letter-spacing: .2rem;
+}
+
+h2{
+    font-family: "kudryashev-d-contrast", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: .2rem;
+    text-transform: capitalize;
+}
+
+h3, h4{
+    font-family: "catamaran", sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+p, label{
+    font-family: "catamaran", sans-serif;
+    font-weight: 100;
+}
+
+input, textarea{
+    font-family: inherit;
 }
 
 a{
