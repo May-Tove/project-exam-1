@@ -54,36 +54,32 @@ function displayPost(details) {
                                 <h1 class="section-title">Tips on places to visit and where to stay</h1>
                                 <div class="city-1">
                                     <div class="city-text">
-                                    <h3>${details.acf.city_heading_1}</h3>
+                                    <h2>${details.acf.city_heading_1}</h2>
                                     <p>${details.acf.city_paragraph_1}</p>
-                                    <h4>${details.acf.sub_heading_1}</h4>
                                     <p>${details.acf.sub_paragraph_1}</p>
                                     </div>
                                     <img src="${details.acf.image_1}" alt="">
                                 </div>
                                 <div class="city-2">
                                     <div class="city-text">
-                                    <h3>${details.acf.city_heading_2}</h3>
+                                    <h2>${details.acf.city_heading_2}</h2>
                                     <p>${details.acf.city_paragraph_2}</p>
-                                    <h4>${details.acf.sub_heading_2}</h4>
                                     <p>${details.acf.sub_paragraph_2}</p>
                                     </div>
                                     <img src="${details.acf.image_2}" alt="">
                                 </div>
                                 <div class="city-3">
                                     <div class="city-text">
-                                    <h3>${details.acf.city_heading_3}</h3>
+                                    <h2>${details.acf.city_heading_3}</h2>
                                     <p>${details.acf.city_paragraph_3}</p>
-                                    <h4>${details.acf.sub_heading_3}</h4>
                                     <p>${details.acf.sub_paragraph_3}</p>
                                     </div>
                                     <img src="${details.acf.image_3}" alt="">
                                 </div>
                                 <div class="city-4">
                                     <div class="city-text">
-                                    <h3>${details.acf.city_heading_4}</h3>
+                                    <h2>${details.acf.city_heading_4}</h2>
                                     <p>${details.acf.city_paragraph_4}</p>
-                                    <h4>${details.acf.sub_heading_4}</h4>
                                     <p>${details.acf.sub_paragraph_4}</p>
                                     </div>
                                     <img src="${details.acf.image_4}" alt="">

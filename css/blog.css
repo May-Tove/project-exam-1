@@ -1,5 +1,5 @@
 .blog-hero{
-    background: linear-gradient(rgba(0 ,0,0,0.3), rgba(0,0,0,0)), url(../images/valdemaras-d-khbjgGAerPU-unsplash.jpg);
+    background: linear-gradient(rgba(0 ,0,0,0.3), rgba(0,0,0,0)), url(../images/david-marcu-78A265wPiO4-unsplash.jpg);
     background-position: center;
     background-size: cover;
     height: 70vh;
@@ -67,17 +67,17 @@
     text-align: center;
     gap: 1rem;
     height: fit-content;
-    opacity: .8;
     transition: all 0.5s;
 }
 
 .post:hover{
-    opacity: 1;
+    box-shadow: 5px 10px 10px lightgray;
     transition: all 0.5s;
     }
 
 .post h2{
     padding-top: 1rem;
+    font-style: normal;
 }
 
 .post h2::after{

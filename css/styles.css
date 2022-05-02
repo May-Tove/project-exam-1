@@ -16,10 +16,19 @@ body{
 
 h1, h2{
     font-family: "kudryashev-d-contrast", sans-serif;
-    font-style: normal;
-    font-weight: 600;
     letter-spacing: .2rem;
-    text-transform: capitalize;
+}
+
+h1{
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    font-style: normal;
+}
+
+h2{
+    font-size: 1.2rem;
+    font-style: italic;
+    line-height: 1.6rem;
 }
 
 h3, h4{
