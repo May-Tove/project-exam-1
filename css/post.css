@@ -107,7 +107,7 @@
     width: 100%;
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.9);
     color: white;
     z-index: 1200;
     display: none;
@@ -124,14 +124,18 @@
 .modalImg{
     width: 80%;
     height: 80%;
-    max-width: 700px;
-    max-height: 600px;
+    max-width: 1000px;
+    max-height: 700px;
     object-fit: cover;
     animation: zoom 0.3s linear;
 }
 
 .modal-txt{
     margin-top: 1rem;
+    font-family: "catamaran", sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+
 }
 
 .close-modal{

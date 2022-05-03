@@ -2,6 +2,7 @@ const postContainer = document.querySelector(".specific-post");
 const heroContainer = document.querySelector(".post-hero");
 const postActiveLink = document.querySelector(".post-detail");
 const postTitle = document.querySelector(".post-title");
+const metaDescription = document.querySelector(".meta-description");
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 const id = params.get("id");
@@ -27,6 +28,8 @@ getPost();
 
 // creating HTML
 function displayPost(details) {
+  metaDescription.innerHTML = `content="Read about my amazing trip to ${details.title.rendered}"`;
+
   postTitle.innerHTML = `My Travel Blog | ${details.title.rendered}`;
 
   postActiveLink.innerHTML = `${details.title.rendered}`;
@@ -36,13 +39,12 @@ function displayPost(details) {
                             </div>`;
 
   postContainer.innerHTML = `<div class="welcome-section">
-                                <p>${details.acf.category}</p>
+  <div class="published-section">
+  <img src="${details.acf.author_img}" alt="" class="author-img">
+  <p>Published ${details.acf.date_posted} by ${details.acf.author} </p>
+  </div>
                                 <h1>${details.acf.main_heading}</h1>
                                 <p class="excerpt">${details.excerpt.rendered}</p>
-                                <div class="published-section">
-                                <img src="${details.acf.author_img}" alt="" class="author-img">
-                                <p>Published ${details.acf.date_posted} by ${details.acf.author} </p>
-                                </div>
                             </div>
                             <div class="intro-section">
                                 <h2></h2>
@@ -92,22 +94,33 @@ function displayPost(details) {
                                     <img src="${details.acf.image_4.url}" alt="${details.acf.image_4.title}" class="post-img" />
                                 </div>
                             </div>`;
-}
 
-// image modal
-const images = document.querySelectorAll(".post-img");
-const modal = document.querySelector(".modal");
-const modalTxt = document.querySelector(".modal-txt");
-const modalImg = document.querySelector(".modalImg");
-const closeModal = document.querySelector(".close-modal");
+  // image modal
+  const images = document.querySelectorAll(".post-img");
+  const modal = document.querySelector(".modal");
+  const modalTxt = document.querySelector(".modal-txt");
+  const modalImg = document.querySelector(".modalImg");
+  const modalContent = document.querySelector(".modal-content");
+  const closeModal = document.querySelector(".close-modal");
 
-images.forEach((image) => {
-  image.addEventListener("click", () => {
-    modal.classList.add("appear");
-    console.log("hello");
+  console.log(images);
+
+  // open modal when image is clicked
+  images.forEach((image) => {
+    image.addEventListener("click", () => {
+      modalImg.src = image.src;
+      modalTxt.innerHTML = image.alt;
+      modal.classList.add("appear");
+      console.log("hello");
+    });
   });
-});
 
-closeModal.addEventListener("click", () => {
-  modal.classList.add("appear");
-});
+  // close modal
+  closeModal.addEventListener("click", () => {
+    modal.classList.remove("appear");
+  });
+
+  modalContent.addEventListener("click", () => {
+    modal.classList.remove("appear");
+  });
+}
