@@ -1,6 +1,7 @@
 const baseUrl =
-  "https://mayth.one/project-exam/wp-json/wp/v2/destinations?per_page=12&acf_format=standard";
+  "https://mayth.one/project-exam/wp-json/wp/v2/destinations?acf_format=standard";
 const postContainer = document.querySelector(".post-container");
+const viewMore = document.querySelector(".view-more-btn");
 
 async function getPosts(url) {
   try {
@@ -22,3 +23,9 @@ async function getPosts(url) {
   }
 }
 getPosts(baseUrl);
+
+viewMore.onclick = function () {
+  viewMore.style.display = "none";
+  const newUrl = baseUrl + `&per_page=12`;
+  getPosts(newUrl);
+};
