@@ -24,23 +24,6 @@
     max-width: 600px;
 }
 
-.category-container{
-    width: 85vw;
-    max-width: 1000px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.category-container select{
-    width: fit-content;
-}
-
-.category-container label, .category-container select{
-    font-family: "catamaran", sans-serif;
-}
-
 .all-posts{
     display: flex;
     flex-direction: column;
