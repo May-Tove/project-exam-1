@@ -22,16 +22,3 @@ async function getPosts(url) {
   }
 }
 getPosts(baseUrl);
-
-const categories = document.querySelector(".category-select");
-categories.onchange = function () {
-  let newUrl;
-  const categoryChosen = categories.value;
-  if (categories.id === "all") {
-    newUrl = baseUrl;
-  } else {
-    newUrl = baseUrl + `&category=${categories.value}`;
-  }
-  postContainer.innerHTML = "";
-  getPosts(newUrl);
-};

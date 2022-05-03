@@ -33,12 +33,17 @@ function displayPost(details) {
                                 <h1>${details.title.rendered}</h1>
                             </div>`;
 
-  postContainer.innerHTML = `<div class="published-section">
-  <img src="${details.acf.author_img}" alt="" class="memory-img">
-                                <p>Published ${details.acf.date_posted} by ${details.acf.author} </p>
-                            </div>
-                            <div class="welcome-section">
+  postContainer.innerHTML = `<div class="welcome-section">
+                                <p>${details.acf.category}</p>
                                 <h1>${details.acf.main_heading}</h1>
+                                <p class="excerpt">${details.excerpt.rendered}</p>
+                                <div class="published-section">
+                                <img src="${details.acf.author_img}" alt="" class="memory-img">
+                                <p>Published ${details.acf.date_posted} by ${details.acf.author} </p>
+                                </div>
+                            </div>
+                            <div class="intro-section">
+                                <h2></h2>
                                 <p>${details.acf.first_paragraph}</p>
                                 <p>${details.acf.second_paragraph}</p>
                             </div>
@@ -51,7 +56,7 @@ function displayPost(details) {
                                     <img src="${details.acf.memory_image}" alt="" class="memory-img">
                             </div>
                             <div class="city-section">
-                                <h1 class="section-title">Tips on places to visit and where to stay</h1>
+                                <h1 class="section-title">Tips on places to visit</h1>
                                 <div class="city-1">
                                     <div class="city-text">
                                     <h2>${details.acf.city_heading_1}</h2>

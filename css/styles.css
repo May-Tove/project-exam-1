@@ -5,13 +5,14 @@
 }
 
 body{
-    background-color: #EDECE4;
+    background-color: #F8F7F9;
 }
 
 .hero h1{
     font-family: "catamaran", sans-serif;
     font-weight: bold;
     letter-spacing: .2rem;
+    color: white;
 }
 
 h1, h2{
@@ -23,12 +24,14 @@ h1{
     font-size: 1.7rem;
     text-transform: uppercase;
     font-style: normal;
+    color: #5570B4;
 }
 
 h2{
     font-size: 1.2rem;
     font-style: italic;
     line-height: 1.6rem;
+    color: #162b6f;
 }
 
 h3, h4{
@@ -56,7 +59,7 @@ a{
 
 .btn{
     padding: .5rem 1.5rem;
-    background-color: #AD323C;
+    background-color: #162B6F;
     border: none;
     color: white;
     text-transform: uppercase;
@@ -80,6 +83,7 @@ a{
 
 .navbar-change{
     background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
 .navbar-change a{
@@ -113,6 +117,15 @@ a{
 .nav-links li{
     list-style: none;
     padding: 3rem;
+}
+
+.nav-links a{
+    transition: all 0.3s;
+}
+
+.nav-links a:hover{
+    opacity: 0.5;
+    transition: all 0.3s;
 }
 
 .hamburger{
