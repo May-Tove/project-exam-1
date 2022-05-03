@@ -38,7 +38,7 @@ function displayPost(details) {
                                 <h1>${details.acf.main_heading}</h1>
                                 <p class="excerpt">${details.excerpt.rendered}</p>
                                 <div class="published-section">
-                                <img src="${details.acf.author_img}" alt="" class="memory-img">
+                                <img src="${details.acf.author_img}" alt="" class="author-img">
                                 <p>Published ${details.acf.date_posted} by ${details.acf.author} </p>
                                 </div>
                             </div>
@@ -53,7 +53,7 @@ function displayPost(details) {
                                     <p>${details.acf.memory_paragraph}</p>
                                     <p>${details.acf.memory_paragraph_2}</p>
                                 </div>
-                                    <img src="${details.acf.memory_image}" alt="" class="memory-img">
+                                    <img src="${details.acf.memory_image.url}" alt="${details.acf.memory_image.title}" class="memory-img post-img" />
                             </div>
                             <div class="city-section">
                                 <h1 class="section-title">Tips on places to visit</h1>
@@ -63,7 +63,7 @@ function displayPost(details) {
                                     <p>${details.acf.city_paragraph_1}</p>
                                     <p>${details.acf.sub_paragraph_1}</p>
                                     </div>
-                                    <img src="${details.acf.image_1}" alt="">
+                                    <img src="${details.acf.image_1.url}" alt="${details.acf.image_1.title}" class="post-img" />
                                 </div>
                                 <div class="city-2">
                                     <div class="city-text">
@@ -71,7 +71,7 @@ function displayPost(details) {
                                     <p>${details.acf.city_paragraph_2}</p>
                                     <p>${details.acf.sub_paragraph_2}</p>
                                     </div>
-                                    <img src="${details.acf.image_2}" alt="">
+                                    <img src="${details.acf.image_2.url}" alt="${details.acf.image_2.title}" class="post-img" />
                                 </div>
                                 <div class="city-3">
                                     <div class="city-text">
@@ -79,7 +79,7 @@ function displayPost(details) {
                                     <p>${details.acf.city_paragraph_3}</p>
                                     <p>${details.acf.sub_paragraph_3}</p>
                                     </div>
-                                    <img src="${details.acf.image_3}" alt="">
+                                    <img src="${details.acf.image_3.url}" alt="${details.acf.image_3.title}" class="post-img" />
                                 </div>
                                 <div class="city-4">
                                     <div class="city-text">
@@ -87,8 +87,24 @@ function displayPost(details) {
                                     <p>${details.acf.city_paragraph_4}</p>
                                     <p>${details.acf.sub_paragraph_4}</p>
                                     </div>
-                                    <img src="${details.acf.image_4}" alt="">
+                                    <img src="${details.acf.image_4.url}" alt="${details.acf.image_4.title}" class="post-img" />
                                 </div>
-                            </div>
-                                    `;
+                            </div>`;
 }
+
+const images = document.querySelectorAll(".post-img img");
+const modal = document.querySelector(".modal");
+const modalTxt = document.querySelector(".modal-txt");
+const modalImg = document.querySelector(".modalImg");
+const closeModal = document.querySelector(".close-modal");
+
+images.forEach((image) => {
+  image.addEventListener("click", () => {
+    modal.classList.add("appear");
+    console.log("hello");
+
+    closeModal.addEventListener("click", () => {
+      modal.classList.remove("appear");
+    });
+  });
+});

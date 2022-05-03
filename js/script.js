@@ -22,6 +22,7 @@ const closeMenu = () => {
 
 closeMenu();
 
+// change nav on scroll
 const header = document.querySelector(".navbar");
 
 window.addEventListener("scroll", () => {

@@ -8,6 +8,11 @@ body{
     background-color: #F8F7F9;
 }
 
+main{
+    padding-bottom: 3rem;
+    min-height: 100vh;
+}
+
 .hero h1{
     font-family: "catamaran", sans-serif;
     font-weight: bold;
@@ -157,4 +162,13 @@ margin: 0 auto;
 
 .active{
     font-weight: bold;
+}
+
+footer{
+    padding: 3rem;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #eeedf0;
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
 }
