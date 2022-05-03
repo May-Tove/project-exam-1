@@ -24,8 +24,9 @@ async function getPosts(url) {
 }
 getPosts(baseUrl);
 
+// view more posts
 viewMore.onclick = function () {
-  viewMore.style.display = "none";
   const newUrl = baseUrl + `&per_page=12`;
+  viewMore.style.display = "none";
   getPosts(newUrl);
 };

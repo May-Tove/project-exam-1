@@ -172,3 +172,21 @@ footer{
     background-color: #eeedf0;
     box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
 }
+
+/* loader */
+.loader {
+    border: 10px solid #e4ebf2;
+    border-top: 10px solid #162b6f;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+    animation: spin .8s infinite ease-in-out;
+  }
+  
+  @keyframes spin {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
