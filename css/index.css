@@ -81,7 +81,8 @@ main{
     flex: 0 0 auto;
     width: 350px;
     height: fit-content;
-    margin-right: 3rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
     transition: all 0.25s ease-in-out;
 }
 
