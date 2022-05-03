@@ -57,7 +57,7 @@ main{
     max-width: 1000px;
     position: relative;
     overflow-x: auto;*/
-    width: 80vw;
+    width: 100vw;
     height: 70vh;
     display: flex;
     overflow-x: auto;
