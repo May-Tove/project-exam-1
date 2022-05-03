@@ -10,6 +10,7 @@ const url =
   id +
   "?acf_format=standard";
 
+// fetching post from WP REST API
 async function getPost() {
   try {
     const response = await fetch(url);
@@ -24,6 +25,7 @@ async function getPost() {
 }
 getPost();
 
+// creating HTML
 function displayPost(details) {
   postTitle.innerHTML = `My Travel Blog | ${details.title.rendered}`;
 
@@ -92,7 +94,8 @@ function displayPost(details) {
                             </div>`;
 }
 
-const images = document.querySelectorAll(".post-img img");
+// image modal
+const images = document.querySelectorAll(".post-img");
 const modal = document.querySelector(".modal");
 const modalTxt = document.querySelector(".modal-txt");
 const modalImg = document.querySelector(".modalImg");
@@ -102,9 +105,9 @@ images.forEach((image) => {
   image.addEventListener("click", () => {
     modal.classList.add("appear");
     console.log("hello");
-
-    closeModal.addEventListener("click", () => {
-      modal.classList.remove("appear");
-    });
   });
+});
+
+closeModal.addEventListener("click", () => {
+  modal.classList.add("appear");
 });
