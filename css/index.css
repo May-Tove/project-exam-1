@@ -41,50 +41,107 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 3rem;
+    position: relative;
+    height: 100vh;
+  width: 100vw;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .section-title{
     text-align: center;
     text-transform: uppercase;
-    padding: 3rem;
+    margin-top: 3rem;
+}
+
+.carousel-container{
+  min-height: 60vh;
+  width: 80%;
+    position: relative;
+  overflow: hidden;
+}
+
+/*.carousel{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  transition: transform .3s ease-in;
+}*/
+
+.slide-img{
+  width:100%;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+
+.slide{
+  position: absolute;
+  top:0;
+  bottom: 0;
+  width:100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+  background-color: white;
+  transition: transform .3s ease-in;
+}
+
+.slide h2{
+    padding-top: 1rem;
+}
+
+.slide p{
+    max-width: 90%;
+}
+
+.slide a{
+    color: #162B6F;
+}
+
+/*.latest-posts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    height: 100vh;
 }
 
 
 .slider-container{
-    /*width: 80vw;
+    width: 80vw;
+    height: 100%;
     margin: 0 auto;
-    height: 70vh;
-    max-width: 1000px;
-    position: relative;
-    overflow-x: auto;*/
-    width: 100vw;
-    height: 70vh;
     display: flex;
-    overflow-x: auto;
+    overflow: hidden;
 }
 
 .slide{
-    /*position: absolute;
-    width: 100%;
-    height: 100%;
-    transition: all 0.25s ease-in-out;
-    text-align: center;
-    background-color: white;
+    flex: 0 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
     gap: 1rem;
+    min-width: 80vw;
     height: fit-content;
-    margin-right: 3rem;*/
-    flex: 0 0 auto;
-    width: 350px;
-    height: fit-content;
-    margin-right: 1rem;
-    margin-left: 1rem;
-    transition: all 0.25s ease-in-out;
+    background-color: white;
+    transition: all 1s;
 }
+
+.slide:hover{
+    transform:scale(1.05);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    transition: all 0.5s;
+    }
 
 .slide h2{
     padding-top: 1rem;
@@ -112,39 +169,31 @@ main{
     width: 100%;
     background-size: cover;
     background-position: center;
-    height: 250px;
+    height: 200px;
     object-fit: cover;
 }
 
 .slide h1{
     font-size: 5rem;
-}
-
-.btn-container{
-    display: flex;
-    justify-content: center;
-    margin-top: 1rem;
-}
+}*/
 
 .prevBtn, .nextBtn{
     position: absolute;
-    top: 130%;
+    top: 50%;
+    transform: translateY(-50%);
     background: none;
     background-color: transparent;
     border: none;
     font-size: 3rem;
     cursor: pointer;
-    margin: 0 0.25rem;
-    text-transform: capitalize;
-    letter-spacing: 2px;
 }
 
 .nextBtn{
-    right: 1rem;
+    right: .5rem;
 }
 
 .prevBtn{
-    left: 1rem;
+    left: .5rem;
 }
 
 
@@ -199,8 +248,12 @@ main{
     right: 1rem;
 }*/
 
+@media (min-width: 799px){
 
-@media (min-width: 992px){
+
+}
+
+@media (min-width: 1224px){
     .nextBtn{
         right: 5rem;
     }
@@ -208,6 +261,12 @@ main{
     .prevBtn{
         left: 5rem;
     }
+
+
+
+
+
+ 
 
 
     /*.slider-container{

@@ -11,7 +11,7 @@ async function getPosts(url) {
     console.log(posts);
 
     posts.forEach(function (post) {
-      postContainer.innerHTML += `<div class="post">   
+      postContainer.innerHTML += `<div class="post ${post.slug}">   
                                     <div style="background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)), url(${post.acf.featured_image})" class="featured-img"></div>
                                     <h2>${post.title.rendered}</h2>
                                     <p>${post.excerpt.rendered}</p>
