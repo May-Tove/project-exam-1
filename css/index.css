@@ -55,7 +55,6 @@ main{
 }
 
 .carousel-container{
-  min-height: 60vh;
   width: 70vw;
     position: relative;
   overflow: hidden;
