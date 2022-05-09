@@ -253,8 +253,12 @@ main{
     }
 
     .slide{
-        width: 50%;
+        padding-bottom: 2rem;
     }
+
+    .slide-img{
+        height: 300px;
+      }
  
 
 
