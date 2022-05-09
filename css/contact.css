@@ -1,26 +1,7 @@
 .contact-hero{
-    background: linear-gradient(rgba(0 ,0,0,0.3), rgba(0,0,0,0)), url(../images/contact-hero.jpg);
+    background: linear-gradient(rgba(0 ,0,0,0.5), rgba(0,0,0,0)), url(../images/contact-hero.jpg);
     background-position: center;
     background-size: cover;
-    height: 70vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
-    text-align: center;
-    text-transform: uppercase;
-    color: white;
-    padding-bottom: 3rem;
-}
-
-.contact-container{
-    width: 85vw;
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-.contact-container{
-    padding-bottom: 3rem;
 }
 
 .contact-text{
@@ -39,7 +20,6 @@
     padding: 10px;
     margin-top: 5px;
     border: 1px solid black;
-    border-radius: var(--borderRadius);
     background: transparent;
     cursor: text;
     font-family: "catamaran", sans-serif;
@@ -62,11 +42,17 @@
   }
 
   .success-message{
-      margin-bottom: 1rem;
-      font-size: 1.5rem;
-      color: green;
+      margin-bottom: 3rem;
+      font-size: 1.2rem;
+      color: #162b6f;
       font-family: "catamaran", sans-serif;
-      font-weight: 100;
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+  }
+
+  .success-message img{
+      width: 55px;
   }
 
 
@@ -74,7 +60,6 @@
     .contact-container{
         display: flex;
         gap: 3rem;
-        padding-bottom: 3rem;
     }
 
     .form-container{

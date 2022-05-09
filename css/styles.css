@@ -1,3 +1,7 @@
+@import "./import/links.css";
+@import "./import/variables.css";
+@import "./import/animations.css";
+
 *{
     margin: 0;
     padding: 0;
@@ -13,11 +17,27 @@ main{
     min-height: 100vh;
 }
 
-.hero h1{
+.hero{
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding-bottom: 3rem;
+}
+
+.hero h1, .featured-img h1{
     font-family: "catamaran", sans-serif;
     font-weight: bold;
     letter-spacing: .2rem;
     color: white;
+}
+
+.main-container{
+    width: 85vw;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 3rem;
 }
 
 h1, h2{
@@ -30,19 +50,19 @@ h1{
     text-transform: uppercase;
     font-style: normal;
     color: #5570B4;
+    font-weight: bold;
 }
 
 h2{
     font-size: 1.2rem;
-    font-style: italic;
     line-height: 1.6rem;
     color: #162b6f;
 }
 
 h3, h4{
     font-family: "catamaran", sans-serif;
-    font-weight: bold;
-    text-transform: uppercase;
+    font-weight: 400;
+    color: #162b6f;
 }
 
 p, label{
@@ -52,26 +72,6 @@ p, label{
 
 input, textarea{
     font-family: inherit;
-}
-
-a{
-    text-decoration: none;
-    color: white;
-    font-family: "catamaran", sans-serif;
-    text-transform: uppercase;
-    letter-spacing: .1rem;
-}
-
-.btn{
-    padding: .5rem 1.5rem;
-    background-color: #162B6F;
-    border: none;
-    color: white;
-    text-transform: uppercase;
-    text-align: center;
-    letter-spacing: .1rem;
-    font-family: "catamaran", sans-serif;
-    cursor: pointer;
 }
 
 /* navigation */
@@ -86,13 +86,22 @@ a{
     transition: all 0.3s;
 }
 
+.logo{
+    color: white;
+    padding: 1rem;
+}
+.logo img{
+    max-width: 110px;
+    padding-top: 10px;
+}
+
 .navbar-change{
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
-.navbar-change a{
-    color: black;
+.navbar-center.logo img{
+    background: black;
 }
 
 .navbar-center{
@@ -110,7 +119,7 @@ a{
     right: 0;
     top: 0px;
     height: 100vh;
-    background-color: black;
+    background-color: #F8F7F9;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -128,14 +137,12 @@ a{
     transition: all 0.3s;
 }
 
-.nav-links a:hover{
-    opacity: 0.5;
-    transition: all 0.3s;
-}
-
-
 .hamburger{
     cursor: pointer;
+}
+
+.hamburger:focus{
+    outline: 1px solid black;
 }
 
 .show{
@@ -149,22 +156,6 @@ top: 2rem;
 left: 2rem;
 }
 
-.breadcrumbs{
-padding: 3rem 0rem;
-width: 85vw;
-max-width: 1000px;
-margin: 0 auto;
-}
-
-.breadcrumbs a{
-    color: black;
-    text-transform: capitalize;
-}
-
-.active{
-    font-weight: bold;
-}
-
 footer{
     padding: 3rem;
     text-align: center;
@@ -172,6 +163,35 @@ footer{
     margin: 0 auto;
     background-color: #eeedf0;
     box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.footer-links{
+    width: 85vw;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-bottom: .5px solid lightslategray;
+    padding-bottom: 2rem;
+}
+
+.footer-links a{
+    text-transform: capitalize;
+}
+
+.footer-links a:hover{
+    text-decoration: underline;
+}
+
+.copyright{
+    font-family: "catamaran", sans-serif;
+    font-size: small;
+    color: grey;
+    padding-top: 2rem;
 }
 
 /* loader */
@@ -190,4 +210,13 @@ footer{
     100% {
       transform: rotate(360deg);
     }
+  }
+
+  /* Fetch error */
+.fetchError {
+    background-color: #ffcccb;
+    padding: 20px;
+    color: darkred;
+    width: fit-content;
+    border: 1px solid darkred;
   }

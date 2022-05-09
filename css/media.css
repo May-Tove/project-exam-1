@@ -1,4 +1,7 @@
 @media (min-width: 799px){
+    .logo img{
+        max-width: 190px;
+    }
     .hamburger{
         display: none;
     }
@@ -17,4 +20,38 @@
           opacity: 1;
           padding: 30px;
       }
+
+      .nav-links a{
+        position: relative;
+        color: white;
+      }
+      
+      .nav-links a.active::after, .nav-links a::after{
+        content: "";
+        width: 50%;
+        height: 2px;
+        background: white;
+        position: absolute;
+        top: 24px;
+        left: 0px;
+        border-radius: 5px;
+      }
+
+      .nav-links a::after{
+        transition: ease-in-out;
+        transition-duration: 0.25s;
+        transform: scale(0, 1);
+      }
+
+      .nav-links a:hover::after, .nav-links a.active::after{
+        transform: scale(1, 1);
+      }
+
+      .navbar-change a::after, .navbar-change a.active::after{
+          background: black;
+      }
+
+      .navbar-change a{
+        color: black;
+    }
 }

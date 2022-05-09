@@ -20,11 +20,12 @@ async function getPosts(url) {
     });
   } catch (error) {
     console.log(error);
+    postContainer.innerHTML = displayError("An error occurred");
   }
 }
 getPosts(baseUrl);
 
-// view more posts
+// when vie more button is clicked, view more posts
 viewMore.onclick = function () {
   const newUrl = baseUrl + `&per_page=12`;
   viewMore.style.display = "none";

@@ -1,93 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="I would love to hear from you! Get in touch with me by contacting me down below.">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="I would love to hear from you! Get in touch with me by contacting me down below."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Travel Blog | Contact</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://use.typekit.net/kpl5sem.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/contact.css">
-    <link rel="stylesheet" href="css/media.css">
-</head>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="css/media.css" />
+  </head>
 
-<body>
+  <body>
     <header class="navbar">
-        <div class="navbar-center">
-            <a href="index.html">TRAVEL</a>
-            <nav class="main-menu menu-overlay">
-                <ul class="nav-links">
-                    <span class="close-menu"><img src="./images/closeIcon.png" alt=""></span>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html" class="active">Contact</a></li>
-                </ul>
-            </nav>
-            <img src="./images/hamburgerMenu.png" alt="" class="hamburger">
-        </div>
+      <div class="navbar-center">
+        <a href="index.html" class="logo"><img src="./images/logo-light.png" alt=""></a>
+        <nav class="main-menu">
+          <ul class="nav-links">
+            <span class="close-menu"
+              ><img src="./images/closeIcon.png" alt="close icon"
+            /></span>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+          </ul>
+        </nav>
+        <img src="./images/hamburgerMenu.png" alt="menu icon" class="hamburger" />
+      </div>
     </header>
     <main>
-        <section class="contact-hero hero">
-            <h1>contact</h1>
-        </section>
-        <div class="breadcrumbs">
-            <nav>
-                <a href="index.html">Home /</a>
-                <a href="about.html" class="active">Contact</a>
-            </nav>
+      <section class="contact-hero hero">
+        <h1>contact</h1>
+      </section>
+      <div class="breadcrumbs">
+        <nav>
+          <a href="index.html">Home /</a>
+          <a href="about.html" class="active">Contact</a>
+        </nav>
+      </div>
+      <section class="contact-container main-container">
+        <div class="contact-text">
+          <h2>Let's get in touch</h2>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Exercitationem pariatur temporibus modi cum recusandae, nam dolor
+            iste reprehenderit eos sed similique? Ea, nihil eum ad laudantium
+            facilis assumenda deleniti?
+          </p>
+          <p>travel@example.com</p>
         </div>
-        <section class="contact-container">
-            <div class="contact-text">
-                <h2>Let's get in touch</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem pariatur temporibus modi cum
-                    recusandae, nam dolor iste reprehenderit eos sed similique? Ea, nihil eum ad laudantium facilis
-                    assumenda deleniti?</p>
-                    <p>travel@example.com</p>
+        <div class="form-container">
+          <div class="success-message">
+              <div>
+                <img src="./images/Icon feather-check-circle.svg" alt="check icon">
+              </div>
+              <div>
+                <h3>Your message has been sent.</h3>
+                <p>
+                  Thank you for contacting me, I will get back to you shortly.
+                </p>
+              </div>
+          </div>
+          <form class="contact-form">
+            <div class="input-group">
+              <label for="name">Full name (minimum 5 characters)</label>
+              <input type="text" name="name" id="name" />
+              <div class="form-error" id="name-error">
+                Please enter your name
+              </div>
             </div>
-            <div class="form-container">
-                <div class="success-message">
-                    <h3>Your message has been sent!</h3>
-                    <p>Thank you for contacting us, we will get back to you within 48h</p>
-                </div>
-                <form class="contact-form">
-                    <div class="input-group">
-                        <label for="name">Full name (minimum 5 characters)</label>
-                        <input type="text" name="name" id="name">
-                        <div class="form-error" id="name-error">Please enter your name</div>
-                    </div>
-                    <div class="input-group">
-                        <label for="email">Email (required)</label>
-                        <input type="email" name="email" id="email">
-                        <div class="form-error" id="email-error">Please enter a valid email address</div>
-                    </div>
-                    <div class="input-group">
-                        <label for="subject">Subject (minimum 15 characters)</label>
-                        <input type="text" name="subject" id="subject">
-                        <div class="form-error" id="subject-error">Subject must contain at least 15 characters</div>
-                    </div>
-                    <div class="input-group">
-                        <label for="message">Message (must contain at least 25 characters)</label>
-                        <textarea id="message"></textarea>
-                        <div class="form-error" id="message-error">Field must contain a message of at least 25
-                            characters
-                        </div>
-                    </div>
-                    <button class="btn">Submit</button>
-                </form>
+            <div class="input-group">
+              <label for="email">Email (required)</label>
+              <input type="email" name="email" id="email" />
+              <div class="form-error" id="email-error">
+                Please enter a valid email address
+              </div>
             </div>
-        </section>
+            <div class="input-group">
+              <label for="subject">Subject (minimum 15 characters)</label>
+              <input type="text" name="subject" id="subject" />
+              <div class="form-error" id="subject-error">
+                Subject must contain at least 15 characters
+              </div>
+            </div>
+            <div class="input-group">
+              <label for="message"
+                >Message (must contain at least 25 characters)</label
+              >
+              <textarea id="message"></textarea>
+              <div class="form-error" id="message-error">
+                Field must contain a message of at least 25 characters
+              </div>
+            </div>
+            <button class="btn">Submit</button>
+          </form>
+        </div>
+      </section>
     </main>
     <script src="js/script.js" type="module"></script>
     <script src="js/contact.js" type="module"></script>
     <footer></footer>
-</body>
-
+  </body>
 </html>

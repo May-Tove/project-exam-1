@@ -1,60 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Read about my travel experience and get some tips on where to go next.">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="Read about my travel experience and get some tips on where to go next."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Travel Blog | Blog</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://use.typekit.net/kpl5sem.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/blog.css">
-    <link rel="stylesheet" href="css/media.css">
-</head>
-<body>
+    <link rel="stylesheet" href="https://use.typekit.net/kpl5sem.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/blog.css" />
+    <link rel="stylesheet" href="css/media.css" />
+  </head>
+  <body>
     <header class="navbar">
-        <div class="navbar-center">
-            <a href="index.html">TRAVEL</a>
-            <nav class="main-menu menu-overlay">
-                <ul class="nav-links">
-                    <span class="close-menu"><img src="./images/closeIcon.png" alt=""></span>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="blog.html" class="active">Blog</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-            <img src="./images/hamburgerMenu.png" alt="" class="hamburger">
-        </div>
+      <div class="navbar-center">
+        <a href="index.html" class="logo"><img src="./images/logo-light.png" alt=""></a>
+        <nav class="main-menu">
+          <ul class="nav-links">
+            <span class="close-menu"
+              ><img src="./images/closeIcon.png" alt="close icon"
+            /></span>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="blog.html" class="active">Blog</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <img
+          src="./images/hamburgerMenu.png"
+          alt="menu icon"
+          class="hamburger"
+          aria-label="navigation menu" 
+          tabindex="0"
+        />
+      </div>
     </header>
     <main>
-        <section class="blog-hero hero">
-            <h1>Blog</h1>
-        </section>
-        <div class="breadcrumbs">
-            <nav>
-                <a href="index.html">Home /</a>
-                <a href="blog.html" class="active">Blog</a>
-            </nav>
+      <section class="blog-hero hero">
+        <h1>Blog</h1>
+      </section>
+      <div class="breadcrumbs">
+        <nav>
+          <a href="index.html">Home /</a>
+          <a href="blog.html" class="active">Blog</a>
+        </nav>
+      </div>
+      <section class="blog-container main-container">
+        <div class="blog-paragraph">
+          <h2>All my travels</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
+            saepe eum eos voluptas mollitia. Porro inventore incidunt, a debitis
+            adipisci, quae, iusto maiores odit veritatis reprehenderit dolor
+            commodi tempore quam!
+          </p>
         </div>
-        <section class="blog-paragraph">
-            <h1>All my travels</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus saepe eum eos voluptas mollitia. Porro inventore incidunt, a debitis adipisci, quae, iusto maiores odit veritatis reprehenderit dolor commodi tempore quam!</p>
-        </section>
-        <section class="all-posts">
-            <div class="post-container">
-                <div class="loader"></div>
-            </div>
-            <button type="button" class="view-more-btn btn">View more</button>
-        </section>
+        <div class="all-posts">
+          <div class="post-container"><div class="loader"></div></div>
+          <button type="button" class="view-more-btn btn">View more</button>
+        </div>
+      </section>
     </main>
     <script src="js/script.js" type="module"></script>
     <script src="js/blog.js" type="module"></script>
     <footer></footer>
-</body>
+  </body>
 </html>

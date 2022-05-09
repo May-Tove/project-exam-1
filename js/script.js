@@ -6,6 +6,10 @@ const showMenu = () => {
   hamburger.addEventListener("click", () => {
     mainMenu.classList.toggle("show");
   });
+
+  hamburger.addEventListener("onkeydown", () => {
+    mainMenu.classList.toggle("show");
+  });
 };
 
 showMenu();

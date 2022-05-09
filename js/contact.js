@@ -15,6 +15,7 @@ const messageError = document.querySelector("#message-error");
 const submitButton = document.querySelector(".submit-btn");
 const successMessage = document.querySelector(".success-message");
 
+// validating form
 form.addEventListener("submit", validateForm);
 
 function validateForm(event) {
@@ -57,7 +58,7 @@ function validateForm(event) {
   }
 }
 
-// Checking length of input
+// checking length of input
 function checkLength(value, len) {
   if (value.trim().length > len) {
     return true;
@@ -66,14 +67,14 @@ function checkLength(value, len) {
   }
 }
 
-// Checking for valid email address
+// checking for valid email address
 function validateEmail(email) {
   const regEx = /\S+@\S+\.\S+/;
   const patternMatches = regEx.test(email);
   return patternMatches;
 }
 
-//Check if input field is valid while typing
+// when typing, check if input field is valid. When valid, turn background color green, if not, show error
 function checkName() {
   if (checkLength(fullName.value, 5) === true) {
     nameError.style.display = "none";
@@ -123,7 +124,7 @@ email.addEventListener("keyup", checkEmail);
 subject.addEventListener("keyup", checkSubject);
 message.addEventListener("keyup", checkMessage);
 
-//Form submit success
+// when clicking submit and all values are valid, show success message
 function showSuccess() {
   if (
     checkLength(fullName.value, 5) &&

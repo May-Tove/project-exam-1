@@ -1,0 +1,46 @@
+a{
+    text-decoration: none;
+    color: black;
+    font-family: "catamaran", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+}
+
+.btn{
+    padding: .5rem 1.5rem;
+    background-color:  #ed8516;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: .1rem;
+    font-family: "catamaran", sans-serif;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.btn:hover{
+    background-color: #a45500;
+    transition: 0.5s ease;
+}
+
+.breadcrumbs{
+    padding: 3rem 0rem;
+    width: 85vw;
+    max-width: 1000px;
+    margin: 0 auto;
+    }
+    
+    .breadcrumbs a{
+        color: black;
+        text-transform: capitalize;
+    }
+    
+    .active{
+        font-weight: bold;
+        color: #A2D1C8;
+    }
+
+    .active a{
+        color: #A2D1C8;
+    }

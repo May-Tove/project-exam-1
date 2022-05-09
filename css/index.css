@@ -3,8 +3,8 @@ main{
 }
 
 .home-hero{
-    background: linear-gradient(rgba(0 ,0,0,0.2), rgba(0,0,0,0)), url(../images/christopher-ruel-cvw75oY6Mjc-unsplash.jpg);
-    background-position: center;
+    background: linear-gradient(rgba(0 ,0,0,0.5), rgba(0,0,0,0)), url(../images/ian-dooley-DuBNA1QMpPA-unsplash.jpg);
+    background-position: top;
     background-size: cover;
     height: 80vh;
     display: flex;
@@ -25,9 +25,9 @@ main{
 .home-hero h1{
     font-family: "kudryashev-d-contrast", sans-serif;
     font-style: normal;
-    font-weight: 800;
+    font-weight: 1000;
     letter-spacing: .2rem;
-    text-transform: capitalize;
+    text-transform: uppercase;
     font-size: 2.5rem;
 }
 
@@ -43,7 +43,6 @@ main{
     align-items: center;
     gap: 3rem;
     position: relative;
-    height: 100vh;
   width: 100vw;
   max-width: 1200px;
   margin: 0 auto;
@@ -96,6 +95,15 @@ main{
 
 .slide h2{
     padding-top: 1rem;
+    font-style: normal;
+}
+
+.slide h2::after{
+    content: "";
+    display: block;
+    margin-top: 1.5rem;
+    height: 2px;
+    background-color: #162B6F;
 }
 
 .slide p{
@@ -177,15 +185,31 @@ main{
     font-size: 5rem;
 }*/
 
-.prevBtn, .nextBtn{
+.carousel-btn{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     background: none;
     background-color: transparent;
     border: none;
-    font-size: 3rem;
+    color: rgba(255,255,255, .5);
+    font-size: 2rem;
+    text-align: center;
+    border-radius: .25rem;
+    padding: .3rem;
+    background-color: rgba(0,0,0, .1);
     cursor: pointer;
+    z-index: 10;
+    transition: all 0.3s;
+}
+
+.carousel-btn:focus{
+    outline: 1px solid black;
+}
+
+.carousel-btn:hover, .carousel-btn:focus{
+    color: white;
+    background-color: rgba(0, 0, 0, .2);
 }
 
 .nextBtn{
@@ -195,8 +219,6 @@ main{
 .prevBtn{
     left: .5rem;
 }
-
-
 
 
 /*.post{
@@ -214,58 +236,25 @@ main{
 .post:hover{
     box-shadow: 5px 10px 10px lightgray;
     transition: all 0.5s;
-    }
+    }*/
 
-
-.carousel-button{
-    position: absolute;
-    z-index: 2;
-    background: none;
-    border: none;
-    font-size: 3rem;
-    top: 170px;
-    color: rgba(255,255,255, .5);
-    cursor: pointer;
-    border-radius: .25rem;
-    padding: .5rem;
-    background-color: rgba(0,0,0, .1);
-}
-
-.carousel-button:hover, .carousel-button:focus{
-    color: white;
-    background-color: rgba(0, 0, 0, .2);
-}
-
-.carousel-button:focus{
-    outline: 1px solid black;
-}
-
-.carousel-button.prev{
-    left: 1rem;
-}
-
-.carousel-button.next{
-    right: 1rem;
-}*/
-
-@media (min-width: 799px){
-
-
-}
 
 @media (min-width: 1224px){
+    .carousel-btn{
+        font-size: 3rem;
+        padding: .5rem;
+    }
     .nextBtn{
-        right: 5rem;
+        right: 3rem;
     }
     
     .prevBtn{
-        left: 5rem;
+        left: 3rem;
     }
 
-
-
-
-
+    .slide{
+        width: 50%;
+    }
  
 
 

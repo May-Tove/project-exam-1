@@ -22,32 +22,35 @@ async function getPost() {
     displayPost(details);
   } catch (error) {
     console.log(error);
+    heroContainer.innerHTML = displayError("An error occurred");
+    postContainer.innerHTML = displayError("An error occurred");
   }
 }
 getPost();
 
 // creating HTML
 function displayPost(details) {
+  // changing meta description to match current post
   metaDescription.innerHTML = `content="Read about my amazing trip to ${details.title.rendered}"`;
 
+  // changing page title to match current post
   postTitle.innerHTML = `My Travel Blog | ${details.title.rendered}`;
 
+  // changing active link in breadcrumbs to match current post
   postActiveLink.innerHTML = `${details.title.rendered}`;
 
+  // changing hero-image to match current post
   heroContainer.innerHTML = `<div style="background-image: linear-gradient(rgba(0 ,0,0,0.3), rgba(0,0,0,0)), url(${details.acf.featured_image})" class="featured-img">
                                 <h1>${details.title.rendered}</h1>
                             </div>`;
 
-  postContainer.innerHTML = `<div class="welcome-section">
-  <div class="published-section">
-  <img src="${details.acf.author_img}" alt="" class="author-img">
-  <p>Published ${details.acf.date_posted} by ${details.acf.author} </p>
-  </div>
-                                <h1>${details.acf.main_heading}</h1>
-                                <p class="excerpt">${details.excerpt.rendered}</p>
+  // creating the actual post
+  postContainer.innerHTML = `<div class="published-section">
+                                <img src="${details.acf.author_img}" alt="" class="author-img">
+                                <p>Published ${details.acf.date_posted} by ${details.acf.author} </p>
                             </div>
                             <div class="intro-section">
-                                <h2></h2>
+                            <h1>${details.acf.main_heading}</h1>
                                 <p>${details.acf.first_paragraph}</p>
                                 <p>${details.acf.second_paragraph}</p>
                             </div>
@@ -111,7 +114,6 @@ function displayPost(details) {
       modalImg.src = image.src;
       modalTxt.innerHTML = image.alt;
       modal.classList.add("appear");
-      console.log("hello");
     });
   });
 

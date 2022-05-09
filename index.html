@@ -1,56 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="Welcome to my travel blog, follow me along my worldwide journey's.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Travel Blog | Home</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://use.typekit.net/kpl5sem.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+    <link
+        href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/media.css">
 </head>
+
 <body>
     <header class="navbar">
         <div class="navbar-center">
-            <a href="index.html">TRAVEL</a>
-            <nav class="main-menu menu-overlay">
+            <a href="index.html" class="logo"><img src="./images/logo-light.png" alt=""></a>
+            <nav class="main-menu">
                 <ul class="nav-links">
-                    <span class="close-menu"><img src="./images/closeIcon.png" alt=""></span>
+                    <span class="close-menu"><img src="./images/closeIcon.png" alt="close icon"></span>
                     <li><a href="index.html" class="active">Home</a></li>
                     <li><a href="blog.html">Blog</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
-            <img src="./images/hamburgerMenu.png" alt="" class="hamburger">
+            <img src="./images/hamburgerMenu.png" alt="menu icon" class="hamburger" aria-label="navigation menu" tabindex="0">
         </div>
     </header>
     <main>
         <section class="home-hero hero">
-            <h1>My travel blog</h1>
-            <h2>follow my worldwide journey</h2>
+            <h1>Welcome to my travel blog</h1>
+            <h2>Follow my worldwide journey, and get inspired for your next adventure</h2>
         </section>
-        <section class="latest-posts">
+        <section class="latest-posts main-container">
             <h2 class="section-title">latest posts</h2>
-            <button type="button" class="prevBtn" aria-label="previous slide">&#8249;</button>
+            <button type="button" class="carousel-btn prevBtn" aria-label="previous slide">&#8249;</button>
             <div class="carousel-container">
-                    <div class="loader"></div>
+                <div class="loader"></div>
             </div>
-                <button type="button" class="nextBtn" aria-label="next slide">&#8250;</button>
+            <button type="button" class="carousel-btn nextBtn" aria-label="next slide">&#8250;</button>
             <a href="blog.html" class="btn view-post">View all posts</a>
         </section>
     </main>
     <script src="js/script.js" type="module"></script>
     <script src="js/index.js" type="module"></script>
     <footer>
-        <h4>Travel</h4>
+        <a href="index.html" class="logo"><img src="./images/logo-light.png" alt=""></a>
+        <div class="footer-links">
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+            <a href="about.html">About</a>
+        </div>
+        <span class="copyright">&copy; Copyright 2022 by Travel</span>
     </footer>
 </body>
+
 </html>

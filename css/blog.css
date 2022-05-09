@@ -1,27 +1,12 @@
 .blog-hero{
-    background: linear-gradient(rgba(0 ,0,0,0.3), rgba(0,0,0,0)), url(../images/david-marcu-78A265wPiO4-unsplash.jpg);
+    background: linear-gradient(rgba(0 ,0,0,0.5), rgba(0,0,0,0)), url(../images/david-marcu-78A265wPiO4-unsplash.jpg);
     background-position: center;
     background-size: cover;
-    height: 70vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
-    text-align: center;
-    text-transform: uppercase;
-    color: white;
-    padding-bottom: 3rem;
-}
-
-.blog-paragraph{
-    width: 85vw;
-    max-width: 1000px;
-    margin: 0 auto;
-    padding-bottom: 3rem;
 }
 
 .blog-paragraph p{
     max-width: 600px;
+    padding-bottom: 3rem;
 }
 
 .all-posts{
@@ -31,12 +16,11 @@
 }
 
 .post-container{
-    padding-top: 1rem;
     width: 85vw;
     max-width: 1000px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     grid-column-gap: 1.5rem;
     grid-row-gap: 2rem;
 }
@@ -54,14 +38,20 @@
 }
 
 .post:hover{
-    transform:scale(1.05);
+    transform:scale(1.02);
     box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
     transition: all 0.5s;
     }
 
+.post .featured-img{
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+}
+
 .post h2{
     padding-top: 1rem;
-    font-style: normal;
 }
 
 .post h2::after{
@@ -73,7 +63,7 @@
 }
 
 .post p{
-    max-width: 300px;
+    max-width: 90%;
 }
 
 .post a{
@@ -81,28 +71,12 @@
     padding-bottom: 2rem;
 }
 
-.post .featured-img{
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-    height: 250px;
-    padding: 1rem;
-
-  
-}
-
-
-
 .view-more-btn{
-    margin: 3rem;
-   text-transform: uppercase;
-   letter-spacing: .1rem;
-   cursor: pointer;
-
+    margin-top: 5rem;
 }
 
 @media (min-width: 799px){
     .post-container{
-      grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     }
 }
