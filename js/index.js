@@ -23,7 +23,7 @@ async function getPosts(url) {
       const prevBtn = document.querySelector(".prevBtn");
 
       slides.forEach(function (slide, index) {
-        slide.style.left = `${index * 100}vw`;
+        slide.style.left = `${index * 70}vw`;
       });
 
       let counter = 0;
@@ -47,7 +47,7 @@ async function getPosts(url) {
         }
 
         slides.forEach(function (slide) {
-          slide.style.transform = `translateX(-${counter * 100}vw)`;
+          slide.style.transform = `translateX(-${counter * 70}vw)`;
         });
       }
     });
