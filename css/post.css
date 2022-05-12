@@ -128,7 +128,7 @@
     /* highlight section */
     .memory-section{
         position: relative;
-        height: 90vh;
+        height: 80vh;
         margin: 5rem 0rem;
     }
     .memory-section > img{

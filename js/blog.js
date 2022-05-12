@@ -11,11 +11,12 @@ async function getPosts(url) {
     console.log(posts);
 
     posts.forEach(function (post) {
-      postContainer.innerHTML += `<div class="post ${post.slug}">   
-                                    <div style="background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)), url(${post.acf.featured_image})" class="featured-img"></div>
+      postContainer.innerHTML += `<div class="post ${post.slug}">
+                                    <a href="post.html?id=${post.id}">   
+                                    <div style="background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.4)), url(${post.acf.featured_image})" class="featured-img">
                                     <h2>${post.title.rendered}</h2>
-                                    <p>${post.excerpt.rendered}</p>
-                                    <a href="post.html?id=${post.id}">Read More ></a>
+                                    </div>
+                                    </a>
                                     </div>`;
     });
   } catch (error) {
