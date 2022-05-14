@@ -10,11 +10,13 @@ async function getPosts(url) {
     console.log(posts);
 
     posts.forEach(function (post) {
-      postContainer.innerHTML += `<div class="slide">  
+      postContainer.innerHTML += `<div class="slide"> 
+      <a href="post.html?id=${post.id}"> 
         <div style="background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)), url(${post.acf.featured_image})" class="slide-img"></div>
         <h2>${post.title.rendered}</h2>
-        <p>${post.excerpt.rendered}</p>
-        <a href="post.html?id=${post.id}">Read More ></a>
+        <p class="slide-txt">${post.excerpt.rendered}</p>
+        <p class="read-more">Read More ></p>
+        </a>
         </div>`;
 
       // carousel

@@ -106,8 +106,6 @@ function displayPost(details) {
   const modalContent = document.querySelector(".modal-content");
   const closeModal = document.querySelector(".close-modal");
 
-  console.log(images);
-
   // open modal when image is clicked
   images.forEach((image) => {
     image.addEventListener("click", () => {
