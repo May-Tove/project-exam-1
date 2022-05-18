@@ -89,7 +89,7 @@
 
 .modal-img{
     max-height: 600px;
-    max-width: 600px;
+    max-width: 350px;
     object-fit: cover;
     transition: all 0.5s;
     animation: zoom 0.3s linear;
@@ -105,7 +105,7 @@
 
 .close-modal{
     position: absolute;
-    font-size: 2rem;
+    font-size: 1.5rem;
     top: 2rem;
     left: 2rem;
     cursor: pointer;
@@ -166,5 +166,10 @@
 
     .city-1 img, .city-3 img{
         grid-area: img;
+    }
+
+    .modal-img{
+        max-height: 600px;
+        max-width: 700px;
     }
 }
