@@ -34,7 +34,7 @@ function displayPost(details) {
   metaDescription.innerHTML = `content="Read about my amazing trip to ${details.title.rendered}"`;
 
   // changing page title to match current post
-  postTitle.innerHTML = `My Travel Blog | ${details.title.rendered}`;
+  postTitle.innerHTML = `Globetrotter | ${details.title.rendered}`;
 
   // changing active link in breadcrumbs to match current post
   postActiveLink.innerHTML = `${details.title.rendered}`;
