@@ -74,6 +74,11 @@ main{
     background-size: cover;
     background-position: center;
   }
+
+  .slide .post-date{
+      font-size: small;
+      opacity: .8;
+  }
   
   .slide a{
     height: 100%;
@@ -84,22 +89,19 @@ main{
   }
 
 .slide h2{
-    padding-top: 1rem;
-    font-style: normal;
     text-transform: capitalize;
 }
 
 .slide p{
     font-family: "catamaran", sans-serif;
     font-weight: 100;
-    text-transform: capitalize;
-
+    text-transform:none;
 }
 
 .slide h2::after{
     content: "";
     display: block;
-    width: 50%;
+    width: 20%;
     margin-top: .5rem;
     height: 2px;
     background-color: #162B6F;
@@ -123,7 +125,6 @@ text-decoration: underline;
     border: none;
     color: rgba(255,255,255, .9);
     text-align: center;
-    border-radius: 50%;
     width: 30px;
     height:30px;
     background-color: rgba(0,0,0, .2);
@@ -149,14 +150,7 @@ text-decoration: underline;
     left: .5rem;
 }
 
-
-@media (min-width: 1224px){
-
-    .carousel-btn{
-        width: 50px;
-        height:50px;
-        font-size: 2rem;
-    }
+@media (min-width: 799px){
     .nextBtn{
         right: 3rem;
     }
@@ -167,6 +161,19 @@ text-decoration: underline;
 
     .slide{
         padding: 1rem;
+        min-width:50%;
+    }
+}
+
+@media (min-width: 1224px){
+
+    .carousel-btn{
+        width: 50px;
+        height:50px;
+        font-size: 2rem;
+    }
+
+    .slide{
         min-width:33.33%;
     }
  

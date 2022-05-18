@@ -9,6 +9,7 @@
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Travel Blog | Contact</title>
+    <script src="https://kit.fontawesome.com/155738729b.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://use.typekit.net/kpl5sem.css">
     <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="css/styles.css" />
@@ -33,16 +34,14 @@
         <a href="index.html" class="logo"><img src="./images/logo-light.png" alt=""></a>
         <nav class="main-menu">
           <ul class="nav-links">
-            <span class="close-menu"
-              ><img src="./images/closeIcon.png" alt="close icon"
-            /></span>
+            <span class="close-menu" aria-label="close icon">&#215;</span>
             <li><a href="index.html">Home</a></li>
             <li><a href="blog.html">Blog</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="contact.html" class="active">Contact</a></li>
           </ul>
         </nav>
-        <img src="./images/hamburgerMenu.png" alt="menu icon" class="hamburger" />
+        <i class="fa-solid fa-bars hamburger"></i>
       </div>
     </header>
     <main>
@@ -98,14 +97,14 @@
                 Field must contain a message of at least 25 characters
               </div>
             </div>
-            <button class="btn">Submit</button>
+            <button class="btn submit-btn">Submit</button>
           </form>
-          <div class="success-message">
-              <h3>Your message has been sent.</h3>
-              <p>
-                Thank you for contacting me, I will get back to you shortly.
-              </p>
-        </div>
+          <div class="contact-modal">
+              <div class="success-message">
+                  <h3>Your message has been sent.</h3>
+                  <p>Thank you for contacting me, I will get back to you shortly.</p>
+                  <span class="close-modal btn">Close</span>
+            </div>
         </div>
       </section>
     </main>

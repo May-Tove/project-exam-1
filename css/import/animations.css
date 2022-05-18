@@ -7,3 +7,10 @@
         transform: scale(1);
     }
 }
+
+/* loader animation */
+@keyframes spin {
+    100% {
+      transform: rotate(360deg);
+    }
+  }

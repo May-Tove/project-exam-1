@@ -27,12 +27,17 @@ async function getPosts(url) {
 getPosts(baseUrl);
 
 //categories
-/*const categories = document.querySelector(".continent-select");
-categories.onchange = function (event) {
-  const newUrl = `https://mayth.one/project-exam/wp-json/wp/v2/destinations?${post.acf.category}`;
+const categories = document.querySelector(".continent-select");
+
+// order by
+const order = document.querySelector(".order-select");
+const orderUrl = "https://mayth.one/project-exam/wp-json/wp/v2/destinations";
+
+order.onchange = function (event) {
+  const newUrl = orderUrl + `?orderby=${event.target.value}`;
   postContainer.innerHTML = "";
   getPosts(newUrl);
-};*/
+};
 
 // when view more button is clicked, view more posts
 viewMore.onclick = function () {

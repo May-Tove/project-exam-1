@@ -1,5 +1,5 @@
 const baseUrl =
-  "https://mayth.one/project-exam/wp-json/wp/v2/destinations?per_page=9&acf_format=standard";
+  "https://mayth.one/project-exam/wp-json/wp/v2/destinations?per_page=12&acf_format=standard";
 const postContainer = document.querySelector(".carousel-container");
 
 async function getPosts(url) {
@@ -13,6 +13,7 @@ async function getPosts(url) {
       postContainer.innerHTML += `<div class="slide"> 
       <a href="post.html?id=${post.id}"> 
         <div style="background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)), url(${post.acf.featured_image})" class="slide-img"></div>
+        <p class="post-date">${post.acf.date_posted}</p>
         <h2>${post.title.rendered}</h2>
         <p class="slide-txt">${post.excerpt.rendered}</p>
         <p class="read-more">Read More ></p>
@@ -41,11 +42,11 @@ async function getPosts(url) {
 
       function carousel() {
         // working with slides
-        if (counter === slides.length) {
+        if (counter === 4) {
           counter = 0;
         }
         if (counter < 0) {
-          counter = slides.length - 1;
+          counter = 4 - 1;
         }
 
         slides.forEach(function (slide) {

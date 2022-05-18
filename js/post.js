@@ -102,7 +102,7 @@ function displayPost(details) {
   const images = document.querySelectorAll(".post-img");
   const modal = document.querySelector(".modal");
   const modalTxt = document.querySelector(".modal-txt");
-  const modalImg = document.querySelector(".modalImg");
+  const modalImg = document.querySelector(".modal-img");
   const modalContent = document.querySelector(".modal-content");
   const closeModal = document.querySelector(".close-modal");
 
@@ -111,16 +111,19 @@ function displayPost(details) {
     image.addEventListener("click", () => {
       modalImg.src = image.src;
       modalTxt.innerHTML = image.alt;
-      modal.classList.add("appear");
+      modal.style.display = "block";
     });
   });
 
-  // close modal
-  closeModal.addEventListener("click", () => {
-    modal.classList.remove("appear");
-  });
+  // close modal when close icon is clicked
+  closeModal.onclick = function () {
+    modal.style.display = "none";
+  };
 
-  modalContent.addEventListener("click", () => {
-    modal.classList.remove("appear");
-  });
+  // close modal when clicking outside of image
+  window.onclick = function (event) {
+    if (event.target === modal) {
+      modal.style.display = "none";
+    }
+  };
 }

@@ -9,6 +9,7 @@
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Travel Blog | Blog</title>
+    <script src="https://kit.fontawesome.com/155738729b.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://use.typekit.net/kpl5sem.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&display=swap"
@@ -35,22 +36,14 @@
         <a href="index.html" class="logo"><img src="./images/logo-light.png" alt=""></a>
         <nav class="main-menu">
           <ul class="nav-links">
-            <span class="close-menu"
-              ><img src="./images/closeIcon.png" alt="close icon"
-            /></span>
+            <span class="close-menu" aria-label="close icon">&#215;</span>
             <li><a href="index.html">Home</a></li>
             <li><a href="blog.html" class="active">Blog</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </nav>
-        <img
-          src="./images/hamburgerMenu.png"
-          alt="menu icon"
-          class="hamburger"
-          aria-label="navigation menu" 
-          tabindex="0"
-        />
+        <i class="fa-solid fa-bars hamburger"></i>  
       </div>
     </header>
     <main>
@@ -77,12 +70,19 @@
             <label for="continents">Continents:</label>
             <select name="continents" class="continent-select">
                 <option value="all" class="continent" id="all">All</option>
-                <option value="Europe" class="continent" id="europe">Europe</option>
-                <option value="Africa" class="continent" id="africa">Africa</option>
-                <option value="asia" class="continent" id="asia">Asia</option>  
-                <option value="oceania" class="continent" id="oceania">Oceania</option>
-                <option value="south-america" class="continent" id="south-america">South-America</option>
-                <option value="north-america" class="continent" id="north-america">North-America</option>
+                <option value="true" class="continent" id="europe">Europe</option>
+                <option value="true" class="continent" id="africa">Africa</option>
+                <option value="true" class="continent" id="asia">Asia</option>  
+                <option value="true" class="continent" id="oceania">Oceania</option>
+                <option value="true" class="continent" id="south-america">South-America</option>
+                <option value="true" class="continent" id="north-america">North-America</option>
+            </select>
+        </div>
+        <div class="order-by">
+            <label for="order-by">Order by:</label>
+            <select name="order-by" class="order-select">
+                <option value="">Select option</option>
+                <option value="title" class="order" id="title">Title</option>
             </select>
         </div>
         <div class="all-posts">

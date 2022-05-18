@@ -12,9 +12,6 @@ const subjectError = document.querySelector("#subject-error");
 const message = document.querySelector("#message");
 const messageError = document.querySelector("#message-error");
 
-const submitButton = document.querySelector(".submit-btn");
-const successMessage = document.querySelector(".success-message");
-
 // validating form
 form.addEventListener("submit", validateForm);
 
@@ -124,6 +121,11 @@ email.addEventListener("keyup", checkEmail);
 subject.addEventListener("keyup", checkSubject);
 message.addEventListener("keyup", checkMessage);
 
+// getting success message variables
+const submitButton = document.querySelector(".submit-btn");
+const successMessage = document.querySelector(".contact-modal");
+const closeMessage = document.querySelector(".close-modal");
+
 // when clicking submit and all values are valid, show success message
 function showSuccess() {
   if (
@@ -149,3 +151,15 @@ function showSuccess() {
 showSuccess();
 
 form.addEventListener("submit", showSuccess);
+
+// close message when clicking close
+closeMessage.onclick = function () {
+  successMessage.style.display = "none";
+};
+
+// close message when clicking outside of message-box
+window.onclick = function (event) {
+  if (event.target === successMessage) {
+    successMessage.style.display = "none";
+  }
+};

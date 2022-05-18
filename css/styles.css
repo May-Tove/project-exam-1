@@ -100,6 +100,10 @@ input, textarea{
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
+.navbar-change .hamburger{
+    color: black;
+}
+
 .navbar-center.logo img{
     background: black;
 }
@@ -122,6 +126,7 @@ input, textarea{
     background-color: #F8F7F9;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     width: 100%;
     text-align: center;
     transform: translateX(100%);
@@ -139,6 +144,8 @@ input, textarea{
 
 .hamburger{
     cursor: pointer;
+    color: white;
+    font-size: 1.2rem;
 }
 
 .hamburger:focus{
@@ -149,11 +156,12 @@ input, textarea{
     transform: translateX(0%);
 }
 
-.close-menu img{
+.close-menu{
 cursor: pointer;
 position: absolute;
 top: 2rem;
 left: 2rem;
+font-size: 1.2rem;
 }
 
 footer{
@@ -204,12 +212,6 @@ footer{
     margin: 0 auto;
     margin-top: 30px;
     animation: spin .8s infinite ease-in-out;
-  }
-  
-  @keyframes spin {
-    100% {
-      transform: rotate(360deg);
-    }
   }
 
   /* Fetch error */
