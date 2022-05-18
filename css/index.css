@@ -28,7 +28,6 @@ main{
     font-weight: 1000;
     letter-spacing: .2rem;
     text-transform: uppercase;
-    font-size: 2.5rem;
 }
 
 .home-hero h2{
@@ -170,7 +169,7 @@ text-decoration: underline;
     .carousel-btn{
         width: 50px;
         height:50px;
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     .slide{
