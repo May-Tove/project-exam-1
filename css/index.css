@@ -56,7 +56,7 @@ main {
 
 .slide-img {
   width: 100%;
-  height: 200px;
+  height: 150px;
   background-size: cover;
   background-position: center;
 }
@@ -72,19 +72,45 @@ main {
   flex-direction: column;
   text-align: left;
   gap: 0.5rem;
+  text-align: center;
 }
 
 .slide p {
   text-transform: none;
 }
 
-.slide:hover .read-more {
-  text-decoration: underline;
+.slide h3{
+    transition: all 0.3s;
+}
+.slide:hover h3, .slide:focus h3{
+    color: #162b6f;
+    transition: all 0.3s;
 }
 
 .slide .read-more {
   color: #162b6f;
   text-transform: uppercase;
+}
+
+.overlay{
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s;
+    opacity: 0;
+}
+
+.slide:hover .overlay, .slide:focus .overlay{
+    opacity: 1;
+    transition: all 0.5s;
+}
+
+.slide:hover .overlay-title, .slide:focus .overlay-title{
+color: white;
+transition: all 0.5s;
 }
 
 /* carousel buttons*/
@@ -147,5 +173,9 @@ main {
 
   .slide {
     min-width: 33.33%;
+  }
+
+  .slide-img{
+      height: 190px;
   }
 }

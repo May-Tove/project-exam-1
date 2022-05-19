@@ -40,7 +40,7 @@ main{
     margin-bottom: 3rem;
 }
 
-h1, h2{
+h1, h2, h3{
     font-family: "Abril Fatface", sans-serif;
     font-weight: 100;
     text-transform: uppercase;
@@ -48,19 +48,23 @@ h1, h2{
 }
 
 h1{
-    font-size: 1.7rem;
+    font-size: 2.5rem;
     font-style: normal;
     color: #5570B4;
     font-weight: bold;
 }
 
 h2{
-    font-size: 1.2rem;
+    font-size: 2rem;
     line-height: 1.6rem;
     color: #162b6f;
 }
 
-h3, h4{
+h3{
+    color: #5570B4;
+}
+
+h4{
     font-family: "catamaran", sans-serif;
     font-weight: 400;
     color: #162b6f;

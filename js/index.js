@@ -12,11 +12,15 @@ async function getPosts(url) {
     posts.forEach(function (post) {
       postContainer.innerHTML += `<div class="slide"> 
                                     <a href="post.html?id=${post.id}"> 
-                                        <div style="background-image: url(${post.acf.featured_image})" class="slide-img"></div>
-                                        <p class="post-date">${post.acf.date_posted}</p>
-                                        <h3>${post.title.rendered}</h3>
-                                        <p class="slide-txt">${post.excerpt.rendered}</p>
-                                        <p class="read-more">Read More ></p>
+                                        <div style="background-image: url(${post.acf.featured_image})" class="slide-img">
+                                        <div class="overlay">
+                                        <div class="overlay-content">
+                                        <h3 class="overlay-title">${post.title.rendered}</h3>
+                                        </div>
+                                        </div>
+                                        </div>
+                                        <p class="post-date">Published ${post.acf.date_posted}</p>
+                                        <h3>${post.acf.main_heading}</h3>
                                     </a>
                                 </div>`;
 
@@ -25,26 +29,32 @@ async function getPosts(url) {
       const nextBtn = document.querySelector(".next-btn");
       const prevBtn = document.querySelector(".prev-btn");
 
+      // moving slides
       slides.forEach(function (slide, index) {
         slide.style.left = `${index * 70}vw`;
       });
 
       let counter = 0;
 
+      // move slide to left when clicking next button
       nextBtn.addEventListener("click", function () {
         counter++;
         carousel();
       });
+
+      // move slide to right when clicking prev button
       prevBtn.addEventListener("click", function () {
         counter--;
         carousel();
       });
 
+      // make carousel infinite
       function carousel() {
-        // working with slides
+        // going back to first slide when clicking next button when on the last slide
         if (counter === 4) {
           counter = 0;
         }
+        // going to last slide when clicking prev button from the first slide
         if (counter < 0) {
           counter = 4 - 1;
         }
@@ -60,56 +70,3 @@ async function getPosts(url) {
   }
 }
 getPosts(baseUrl);
-
-// carousel
-/*const carousel = document.querySelector(".carousel");
-const slides = document.querySelectorAll(".slide");
-const prevBtn = document.querySelector(".prevBtn");
-const nextBtn = document.querySelector(".nextBtn");
-
-const slideWidth = slides[0].getBoundingClientRect().width;
-
-const setSlidePosition = (slide, index) => {
-  slide.style.left = slideWidth * index + "px";
-};
-slides.forEach(setSlidePosition);
-
-const moveToSlide = (carousel, currentSlide, targetSlide) => {
-        carousel.style.transform = "translateX(-" + targetSlide.style.left;
-        +")";
-        currentSlide.classList.remove("current-slide");
-        targetSlide.classList.add("current-slide");
-      };
-
-const hideShowArrows = (slides, prevBtn, nextBtn, targetIndex) => {
-        if (targetIndex === 0) {
-          prevBtn.classList.add("btn-hide");
-          nextBtn.classList.remove("btn-hide");
-        } else if (targetIndex === slides.length - 1) {
-          prevBtn.classList.remove("btn-hide");
-          nextBtn.classList.add("btn-hide");
-        } else {
-          prevBtn.classList.remove("btn-hide");
-          nextBtn.classList.remove("btn-hide");
-        }
-      };
-
-// when click left, move slide to left
-prevBtn.addEventListener("click", (e) => {
-        const currentSlide = carousel.querySelector(".current-slide");
-        const prevSlide = currentSlide.previousElementSibling;
-        const prevIndex = slides.findIndex((slide) => slide === prevSlide);
-
-        moveToSlide(carousel, currentSlide, prevSlide);
-        hideShowArrows(slides, prevBtn, nextBtn, prevIndex);
-      });
-
-// when click right, move slide to right
-nextBtn.addEventListener("click", (e) => {
-  const currentSlide = carousel.querySelector(".current-slide");
-  const nextSlide = currentSlide.nextElementSibling;
-  const nextIndex = slides.findIndex((slide) => slide === nextSlide);
-
-  moveToSlide(carousel, currentSlide, nextSlide);
-        hideShowArrows(slides, prevBtn, nextBtn, nextIndex);
-});*/
