@@ -11,19 +11,19 @@ async function getPosts(url) {
 
     posts.forEach(function (post) {
       postContainer.innerHTML += `<div class="slide"> 
-      <a href="post.html?id=${post.id}"> 
-        <div style="background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)), url(${post.acf.featured_image})" class="slide-img"></div>
-        <p class="post-date">${post.acf.date_posted}</p>
-        <h2>${post.title.rendered}</h2>
-        <p class="slide-txt">${post.excerpt.rendered}</p>
-        <p class="read-more">Read More ></p>
-        </a>
-        </div>`;
+                                    <a href="post.html?id=${post.id}"> 
+                                        <div style="background-image: url(${post.acf.featured_image})" class="slide-img"></div>
+                                        <p class="post-date">${post.acf.date_posted}</p>
+                                        <h3>${post.title.rendered}</h3>
+                                        <p class="slide-txt">${post.excerpt.rendered}</p>
+                                        <p class="read-more">Read More ></p>
+                                    </a>
+                                </div>`;
 
       // carousel
       const slides = document.querySelectorAll(".slide");
-      const nextBtn = document.querySelector(".nextBtn");
-      const prevBtn = document.querySelector(".prevBtn");
+      const nextBtn = document.querySelector(".next-btn");
+      const prevBtn = document.querySelector(".prev-btn");
 
       slides.forEach(function (slide, index) {
         slide.style.left = `${index * 70}vw`;

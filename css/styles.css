@@ -41,13 +41,14 @@ main{
 }
 
 h1, h2{
-    font-family: "kudryashev-d-contrast", sans-serif;
+    font-family: "Abril Fatface", sans-serif;
+    font-weight: 100;
+    text-transform: uppercase;
     letter-spacing: .2rem;
 }
 
 h1{
     font-size: 1.7rem;
-    text-transform: uppercase;
     font-style: normal;
     color: #5570B4;
     font-weight: bold;
@@ -90,6 +91,10 @@ input, textarea{
     color: white;
     padding: 1rem;
 }
+
+.logo-dark{
+    display: none;
+}
 .logo img{
     max-width: 110px;
     padding-top: 10px;
@@ -98,6 +103,14 @@ input, textarea{
 .navbar-change{
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.navbar-change .logo-dark{
+    display: block;
+}
+
+.navbar-change .logo-light{
+    display: none;
 }
 
 .navbar-change .hamburger{

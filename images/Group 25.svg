@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="758" height="150" viewBox="0 0 758 150">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #162b6f;
+        font-size: 100px;
+        font-family: BrownSugar, Brown Sugar;
+        letter-spacing: 0.031em;
+      }
+
+      .cls-2 {
+        fill: #6e6e6e;
+        font-size: 40px;
+        font-family: Montserrat-Regular, Montserrat;
+        letter-spacing: 0.12em;
+      }
+    </style>
+  </defs>
+  <g id="Group_25" data-name="Group 25" transform="translate(2005 1962)">
+    <text id="globetrotter" class="cls-1" transform="translate(-2004 -1886)"><tspan x="0" y="0">GLOBETROTTER</tspan></text>
+    <text id="Embrace_the_Journey" data-name="Embrace the Journey" class="cls-2" transform="translate(-1924 -1822)"><tspan x="0" y="0">EMBRACE THE JOURNEY</tspan></text>
+  </g>
+</svg>

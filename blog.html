@@ -57,34 +57,32 @@
         </nav>
       </div>
       <section class="blog-container main-container">
-        <div class="blog-paragraph">
-          <h2>All my travels</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
-            saepe eum eos voluptas mollitia. Porro inventore incidunt, a debitis
-            adipisci, quae, iusto maiores odit veritatis reprehenderit dolor
-            commodi tempore quam!
-          </p>
+        <div class="search-container">
+            <label for="search-input"></label>
+            <input type="search" name="search" id="search-input" placeholder="Search posts">
+            <button class="search-btn">Search</button>
         </div>
-        <div class="continents">
-            <label for="continents">Continents:</label>
-            <select name="continents" class="continent-select">
-                <option value="all" class="continent" id="all">All</option>
-                <option value="true" class="continent" id="europe">Europe</option>
-                <option value="true" class="continent" id="africa">Africa</option>
-                <option value="true" class="continent" id="asia">Asia</option>  
-                <option value="true" class="continent" id="oceania">Oceania</option>
-                <option value="true" class="continent" id="south-america">South-America</option>
-                <option value="true" class="continent" id="north-america">North-America</option>
-            </select>
-        </div>
-        <div class="order-by">
-            <label for="order-by">Order by:</label>
-            <select name="order-by" class="order-select">
-                <option value="">Select option</option>
-                <option value="title" class="order" id="title">Title</option>
-            </select>
-        </div>
+        <section class="filter-container">
+            <div class="continents">
+                <label for="continents">Continents:</label>
+                <select name="continents" class="continent-select">
+                    <option value="10" class="continent" id="all">All</option>
+                    <option value="5" class="continent" id="europe">Europe</option>
+                    <option value="8" class="continent" id="africa">Africa</option>
+                    <option value="4" class="continent" id="asia">Asia</option>  
+                    <option value="9" class="continent" id="oceania">Oceania</option>
+                    <option value="7" class="continent" id="south-america">South-America</option>
+                    <option value="6" class="continent" id="north-america">North-America</option>
+                </select>
+            </div>
+            <div class="order-by">
+                <label for="order-by">Order by:</label>
+                <select name="order-by" class="order-select">
+                    <option value="desc" class="order" id="descending">Newest</option>
+                    <option value="asc" class="order" id="ascending">Oldest</option>
+                </select>
+            </div>
+        </section>
         <div class="all-posts">
           <div class="post-container"><div class="loader"></div></div>
           <button type="button" class="view-more-btn btn">View more</button>

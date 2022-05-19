@@ -96,7 +96,26 @@ function displayPost(details) {
                                     </div>
                                     <img src="${details.acf.image_4.url}" alt="${details.acf.image_4.title}" class="post-img" />
                                 </div>
-                            </div>`;
+                            </div>
+                            <section class="comments">
+                            <h3>Comments</h3>
+                            <form class="comment-form">
+                            <input type="hidden" id="post-id" value="${details.id}" />
+                                <div class="input-group">
+                                    <label for="name">Name</label>
+                                    <input type="text" name="name" id="name">
+                                </div>
+                                <div class="input-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" name="email" id="email">
+                                </div>
+                                <div class="input-group">
+                                    <label for="comment">Comment</label>
+                                    <textarea type="text" name="comment" id="comment"></textarea>
+                                </div>
+                                <input type="submit" value="Post comment" />
+                            </form>
+                            </section>`;
 
   // image modal
   const images = document.querySelectorAll(".post-img");
