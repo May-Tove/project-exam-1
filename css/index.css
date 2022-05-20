@@ -1,6 +1,4 @@
-main {
-  min-height: 100vh;
-}
+
 
 /* hero */
 /*.home-hero {
@@ -29,32 +27,17 @@ main {
 }*/
 
 .home-hero{
-    height: 70vh;
-    max-height: 900px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
     gap: .2rem;
-   padding-bottom: 0;
-}
-
-.home-hero h1,
-.home-hero p {
-  color: white;
-  text-align: center;
-  max-width: 90vw;
-  margin: 0 auto;
-}
-
-.home-hero h1 {
-  font-family: "Abril Fatface", sans-serif;
+    padding-bottom: 0;
 }
 
 .home-hero p{
     font-size: 1.3rem;
-    letter-spacing: .3rem;
-    text-transform: capitalize;
+    letter-spacing: .2rem;
+    text-transform: none;
+    color: white;
+    text-align: center;
 }
 
 .home-hero h1::after{
@@ -64,7 +47,8 @@ main {
     left: 0;
     width: 100%;
     height: 70vh;
-    background: rgba(0,0,0,0.6);
+    max-height: 900px;
+    background: rgba(0,0,0,0.4);
     z-index: -1;
 }
 
@@ -80,7 +64,7 @@ main {
 }
 
 
-/* latest posts */
+/* latest posts section */
 .latest-posts {
   display: flex;
   flex-direction: column;
@@ -123,26 +107,22 @@ main {
   height: 100%;
   display: flex;
   flex-direction: column;
-  text-align: left;
-  gap: 0.5rem;
+  align-items: center;
   text-align: center;
+  gap: 0.5rem;
 }
 
 .slide p {
   text-transform: none;
 }
 
+/* hovering on posts */
 .slide h3{
     transition: all 0.3s;
 }
 .slide:hover h3, .slide:focus h3{
     color: var(--mainColorDarkened);
     transition: all 0.3s;
-}
-
-.slide .read-more {
-  color: #162b6f;
-  text-transform: uppercase;
 }
 
 .overlay{
@@ -154,6 +134,10 @@ main {
     justify-content: center;
     transition: all 0.5s;
     opacity: 0;
+}
+
+.overlay-title{
+    color: white;
 }
 
 .slide:hover .overlay, .slide:focus .overlay{
@@ -174,11 +158,11 @@ transition: all 0.5s;
   background: none;
   background-color: transparent;
   border: none;
-  color: rgba(255, 255, 255, 0.9);
+  color: white;
   text-align: center;
   width: 20px;
   height: 30px;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.4);
   cursor: pointer;
   z-index: 10;
   transition: all 0.3s;
@@ -187,7 +171,7 @@ transition: all 0.5s;
 .carousel-btn:hover,
 .carousel-btn:focus {
   color: white;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .next-btn {

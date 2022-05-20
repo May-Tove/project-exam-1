@@ -27,11 +27,11 @@ async function getPosts(url) {
 getPosts(baseUrl);
 
 //categories
-const categories = document.querySelector(".continent-select");
+const continents = document.querySelectorAll(".continents");
 const continentUrl =
   "https://mayth.one/project-exam/wp-json/wp/v2/destinations";
 
-categories.onchange = function () {
+/*categories.onchange = function () {
   let newUrl;
   const continentChosen = categories.value;
   if (categories.value === "10") {
@@ -44,7 +44,22 @@ categories.onchange = function () {
   }
   postContainer.innerHTML = "";
   getPosts(newUrl);
-};
+};*/
+continents.forEach(function (continent) {
+  continent.onclick = function (event) {
+    let newUrl;
+    console.log(event.target.value);
+    const continentChosen = event.target.value;
+    if (event.target.id === "all") {
+      newUrl = baseUrl;
+    } else {
+      newUrl =
+        continentUrl + `?categories=${continentChosen}&acf_format=standard`;
+      viewMore.style.display = "none";
+    }
+    getPosts(newUrl);
+  };
+});
 
 // search for posts
 const searchBtn = document.querySelector(".search-btn");

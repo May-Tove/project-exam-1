@@ -27,9 +27,9 @@ main{
     padding-bottom: 3rem;
 }
 
-.hero h1, .featured-img h1{
+.hero h1, .featured-img h1, .home-hero h1{
     font-family: "catamaran", sans-serif;
-    font-weight: bold;
+    font-weight: 900;
     letter-spacing: .2rem;
     color: white;
 }
@@ -224,7 +224,7 @@ footer{
 .copyright{
     font-family: "catamaran", sans-serif;
     font-size: small;
-    color: grey;
+    color: rgb(92, 92, 92);
     padding: 2rem;
 }
 

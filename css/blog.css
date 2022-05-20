@@ -36,32 +36,35 @@
     background-color: transparent;
 }
 
-.continents{
-    display: flex;
-    align-items: center;
-    gap: .5rem;
-}
 .continent-select{
     border: 1px solid black;
     border-radius: 0;
     background-color: transparent;
 }
 
-.continent-select, .continents label{
+.continent-select{
     font-family: "catamaran", sans-serif;
     font-weight: 100;
 }
 
-.radio-wrapper{
-    display: inline-block;
+.continents{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
 
-.radio-wrapper input{
-    display: none;
-}
 
-.radio-wrapper label{
+.continents label{
     cursor: pointer;
+    text-transform: uppercase;
+}
+
+.continents label:hover{
+    font-weight: bold;
+}
+
+label input:checked{
+    font-weight: bold;
 }
 
 /* posts section */
@@ -127,34 +130,19 @@
     }
 }
 
-/*            <div class="continents">
-                <label for="continents">Continents:</label>
-                <div class="radio-wrapper">
-                    <input type="radio" value="10" class="continent" name="continent" id="all">
-                    <label for="all">All</label>
-                </div>
-                <div class="radio-wrapper">
-                    <input type="radio" value="5" class="continent" name="continent" id="europe">
-                    <label for="europe">Europe</label>
-                </div>
-                <div class="radio-wrapper">
-                <input type="radio" value="8" class="continent" name="continent" id="africa">
-                <label for="africa">Africa</label>
-                </div>
-                <div class="radio-wrapper">
-                    <input type="radio" value="4" class="continent" name="continent" id="asia">
-                    <label for="asia">Asia</label>
-                </div>
-                <div class="radio-wrapper">
-                    <input type="radio" value="9" class="continent" name="continent" id="oceania">
-                    <label for="oceania">Oceania</label>
-                </div>
-                <div class="radio-wrapper">
-                    <input type="radio" value="7" class="continent" name="continent" id="south-america">
-                    <label for="south-america">South-America</label>
-                </div>
-                <div class="radio-wrapper">
-                    <input type="radio" value="6" class="continent" name="continent" id="north-america">
-                    <label for="north-america">North-America</label>
-                </div>
-            </div>*/
+/*<div class="continents">
+<label for="continents">Continents:</label>
+<select name="continents" class="continent-select">
+    <option value="10" class="continent" id="all">All</option>
+    <option value="5" class="continent" id="europe">Europe</option>
+    <option value="8" class="continent" id="africa">Africa</option>
+    <option value="4" class="continent" id="asia">Asia</option>
+    <option value="9" class="continent" id="oceania">Oceania</option>
+    <option value="7" class="continent" id="south-america">
+        South-America
+    </option>
+    <option value="6" class="continent" id="north-america">
+        North-America
+    </option>
+</select>
+</div>*/
