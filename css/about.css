@@ -24,7 +24,7 @@
 @media (min-width: 992px) {
     .about-container{
         position: relative;
-        height: 80vh;
+        height: 85vh;
         max-height: 700px;
     }
     .about-card{
