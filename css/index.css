@@ -94,6 +94,7 @@ main {
 /* slides */
 .carousel-container {
   width: 70vw;
+  max-width: 1000px;
   position: relative;
   overflow: hidden;
   display: flex;
