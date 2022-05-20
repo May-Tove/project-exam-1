@@ -12,10 +12,6 @@
     position: relative;
 }
 
-.main-container{
-    height: 70vh;
-}
-
 .about-card{
     display: flex;
     flex-direction: column;
@@ -28,6 +24,8 @@
 @media (min-width: 992px) {
     .about-container{
         position: relative;
+        height: 80vh;
+        max-height: 700px;
     }
     .about-card{
         position: absolute;
