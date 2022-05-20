@@ -1,0 +1,11 @@
+:root{
+    --mainColor: #00807D;
+    --mainColorDarkened: #00605E;
+    --mainLightColor:#FFFEF7;
+    --headerColor: #FFF;
+    --footerColor: #EBECDB;
+    --btnColor: #000;
+    --transition: all .3s;
+
+
+}

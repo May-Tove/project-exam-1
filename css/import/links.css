@@ -8,7 +8,7 @@ a{
 
 .btn{
     padding: .5rem 1.5rem;
-    background-color: #162b6f;
+    background-color: var(--btnColor);
     border: none;
     color: white;
     text-transform: uppercase;
@@ -20,7 +20,7 @@ a{
 }
 
 .btn:hover{
-    background-color: #a45500;
+    opacity: .5;
     transition: 0.5s ease;
 }
 
@@ -34,6 +34,10 @@ a{
     .breadcrumbs a{
         color: black;
         text-transform: capitalize;
+    }
+
+    .breadcrumbs a.active{
+        color: var(--mainColorDarkened);
     }
     
     .active{

@@ -3,7 +3,7 @@ main {
 }
 
 /* hero */
-.home-hero {
+/*.home-hero {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)),
     url(../images/ian-dooley-DuBNA1QMpPA-unsplash.jpg);
   background-position: top;
@@ -26,7 +26,57 @@ main {
 
 .home-hero h1 {
   font-family: "Abril Fatface", sans-serif;
+}*/
+
+.home-hero{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .2rem;
+   padding-bottom: 0;
 }
+
+.home-hero h1,
+.home-hero p {
+  color: white;
+  text-align: center;
+  max-width: 90vw;
+  margin: 0 auto;
+}
+
+.home-hero h1 {
+  font-family: "Abril Fatface", sans-serif;
+}
+
+.home-hero p{
+    font-size: 1.3rem;
+    letter-spacing: .3rem;
+    text-transform: capitalize;
+}
+
+.home-hero h1::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80vh;
+    background: rgba(0,0,0,0.6);
+    z-index: -1;
+}
+
+.video-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+    z-index: -2;
+}
+
 
 /* latest posts */
 .latest-posts {
@@ -83,7 +133,7 @@ main {
     transition: all 0.3s;
 }
 .slide:hover h3, .slide:focus h3{
-    color: #162b6f;
+    color: var(--mainColorDarkened);
     transition: all 0.3s;
 }
 
@@ -131,14 +181,10 @@ transition: all 0.5s;
   transition: all 0.3s;
 }
 
-.carousel-btn:focus {
-  outline: 1px solid black;
-}
-
 .carousel-btn:hover,
 .carousel-btn:focus {
   color: white;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .next-btn {

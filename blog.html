@@ -33,7 +33,8 @@
   <body>
     <header class="navbar">
       <div class="navbar-center">
-        <a href="index.html" class="logo"><img src="./images/logo-light.png" alt=""></a>
+        <a href="index.html" class="logo logo-light"><img src="./images/logo9-light2.png" alt="logo"/></a>
+        <a href="index.html" class="logo logo-dark"><img src="./images/logo-green.png" alt="logo"/></a>
         <nav class="main-menu">
           <ul class="nav-links">
             <i class="fa-solid fa-xmark close-menu"></i>
@@ -57,11 +58,6 @@
         </nav>
       </div>
       <section class="blog-container main-container">
-        <div class="search-container">
-            <label for="search-input"></label>
-            <input type="search" name="search" id="search-input" placeholder="Search posts">
-            <button class="search-btn">Search</button>
-        </div>
         <section class="filter-container">
             <div class="continents">
                 <label for="continents">Continents:</label>
@@ -75,12 +71,10 @@
                     <option value="6" class="continent" id="north-america">North-America</option>
                 </select>
             </div>
-            <div class="order-by">
-                <label for="order-by">Order by:</label>
-                <select name="order-by" class="order-select">
-                    <option value="desc" class="order" id="descending">Newest</option>
-                    <option value="asc" class="order" id="ascending">Oldest</option>
-                </select>
+            <div class="search-container">
+                <label for="search-input"></label>
+                <input type="search" name="search" id="search-input" placeholder="Search posts">
+                <button class="search-btn btn">Search</button>
             </div>
         </section>
         <div class="all-posts">
@@ -92,7 +86,7 @@
     <script src="js/script.js" type="module"></script>
     <script src="js/blog.js" type="module"></script>
     <footer>
-        <a href="index.html" class="logo"><img src="./images/logo-short.png" alt="logo"></a>
+        <a href="index.html" class="logo"><img src="./images/logo-green.png" alt="logo"/></a>
         <div class="footer-links">
             <a href="blog.html">Blog</a>
             <a href="contact.html">Contact</a>

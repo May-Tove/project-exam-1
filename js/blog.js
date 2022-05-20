@@ -13,7 +13,7 @@ async function getPosts(url) {
     posts.forEach(function (post) {
       postContainer.innerHTML += `<div class="post ${post.title.rendered}">
                                     <a href="post.html?id=${post.id}">   
-                                    <div style="background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.2)), url(${post.acf.featured_image})" class="featured-img">
+                                    <div style="background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.5)), url(${post.acf.featured_image})" class="featured-img">
                                     <h2>${post.title.rendered}</h2>
                                     </div>
                                     </a>
@@ -42,15 +42,6 @@ categories.onchange = function () {
       continentUrl + `?categories=${continentChosen}&acf_format=standard`;
     viewMore.style.display = "none";
   }
-  postContainer.innerHTML = "";
-  getPosts(newUrl);
-};
-
-// order by
-const order = document.querySelector(".order-select");
-
-order.onchange = function (event) {
-  const newUrl = baseUrl + `&order=${event.target.value}`;
   postContainer.innerHTML = "";
   getPosts(newUrl);
 };

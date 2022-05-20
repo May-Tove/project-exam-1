@@ -31,12 +31,16 @@
     object-fit: cover;
 }
 
+.intro-section h1{
+    margin: 3rem;
+}
+
 /* published date and name */
 .published-section{
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 1rem;
-    margin-bottom: 3rem;
 }
 
 .published-section img{
@@ -52,12 +56,6 @@
 }
 
 /* destination section */
-
-.city-section h1{
-    text-align: center;
-    font-size: 1.5rem;
-}
-
 .city-1, .city-2, .city-3, .city-4{
     padding: 3rem 0rem;
 }
