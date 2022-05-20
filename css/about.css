@@ -12,6 +12,10 @@
     position: relative;
 }
 
+.main-container{
+    height: 70vh;
+}
+
 .about-card{
     display: flex;
     flex-direction: column;
@@ -24,7 +28,6 @@
 @media (min-width: 992px) {
     .about-container{
         position: relative;
-        height: 80vh;
     }
     .about-card{
         position: absolute;
@@ -50,8 +53,6 @@
 }
 
 @media (min-width: 1500px){
-    .about-container{
-        height: 70vh;
-    }
+
 }
 
