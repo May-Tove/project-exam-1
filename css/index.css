@@ -40,7 +40,7 @@
     text-align: center;
 }
 
-/*.home-hero h1::after{
+.home-hero h1::after{
     content: "";
     position: absolute;
     top: 0;
@@ -50,7 +50,7 @@
     max-height: 900px;
     background: rgba(0,0,0,0.4);
     z-index: -1;
-}*/
+}
 
 .video-container{
     position: absolute;
