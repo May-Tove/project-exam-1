@@ -32,6 +32,10 @@
     padding-bottom: 0;
 }
 
+.home-hero h1, .home-hero p{
+    width: 90vw;
+}
+
 .home-hero p{
     font-size: 1.3rem;
     letter-spacing: .2rem;

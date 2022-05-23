@@ -1,5 +1,5 @@
 .blog-hero{
-    background: linear-gradient(rgba(0 ,0,0,0.5), rgba(0,0,0,0.5)), url(../images/pexels-francesco-ungaro-2325446.jpg);
+    background: linear-gradient(rgba(0 ,0,0,0.4), rgba(0,0,0,0.4)), url(../images/pexels-francesco-ungaro-2325446.jpg);
     background-position: center;
     background-size: cover;
 }
@@ -40,12 +40,11 @@
     border: 1px solid black;
     border-radius: 0;
     background-color: transparent;
-}
-
-.continent-select{
     font-family: "catamaran", sans-serif;
     font-weight: 100;
+    padding: 7px;
 }
+
 
 .continents{
     display: flex;
@@ -56,11 +55,6 @@
 
 .continents label{
     cursor: pointer;
-    text-transform: uppercase;
-}
-
-.continents label:hover{
-    font-weight: bold;
 }
 
 label input:checked{
@@ -146,3 +140,27 @@ label input:checked{
     </option>
 </select>
 </div>*/
+
+/*
+                <div class="continents">
+                        <label for="all">All</label>
+                        <input type="radio" value="10" class="continent" name="continent" id="all"/>
+
+                        <label for="europe">Europe</label>
+                        <input type="radio" value="5" class="continent" name="continent" id="europe"/>
+
+                        <label for="africa">Africa</label>
+                        <input type="radio" value="8" class="continent" name="continent" id="africa" />
+
+                        <label for="asia">Asia</label>
+                        <input type="radio" value="4" class="continent" name="continent" id="asia" />
+
+                        <label for="oceania">Oceania</label>
+                        <input type="radio" value="9" class="continent" name="continent" id="oceania" />
+
+                        <label for="south-america">South-America</label>
+                        <input type="radio" value="7" class="continent" name="continent" id="south-america" />
+
+                        <label for="north-america">North-America</label>
+                        <input type="radio" value="6" class="continent" name="continent" id="north-america" />
+                </div>*/

@@ -52,6 +52,7 @@ continents.forEach(function (continent) {
     const continentChosen = event.target.value;
     if (event.target.id === "all") {
       newUrl = baseUrl;
+      viewMore.style.display = "block";
     } else {
       newUrl =
         continentUrl + `?categories=${continentChosen}&acf_format=standard`;

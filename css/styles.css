@@ -59,7 +59,6 @@ h1, h2{
 }
 
 h1{
-    font-size: 2.5rem;
     font-style: normal;
     color: var(--mainColor);
     font-weight: bold;
@@ -67,19 +66,20 @@ h1{
 }
 
 h2{
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     color: var(--mainColorDarkened);
 }
 
 h3{
-    font-family: "Abril Fatface", sans-serif;
+    font-family: "catamaran", sans-serif;
+    text-transform: uppercase;
+    font-size: 1rem;
     color: var(--mainColor);
 }
 
 h4{
     font-family: "catamaran", sans-serif;
     font-weight: 400;
-    color: #162b6f;
 }
 
 p, label{
@@ -230,8 +230,8 @@ footer{
 
 /* loader */
 .loader {
-    border: 10px solid #e4ebf2;
-    border-top: 10px solid #162b6f;
+    border: 10px solid lightgrey;
+    border-top: 10px solid black;
     border-radius: 50%;
     width: 100px;
     height: 100px;

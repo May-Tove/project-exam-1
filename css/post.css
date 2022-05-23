@@ -26,13 +26,14 @@
 
 .post-img{
     width: 100%;
-    height: 500px;
+    height: 370px;
     transition: all 0.5s;
     object-fit: cover;
 }
 
 .intro-section h1{
-    margin: 3rem;
+    margin-bottom: 1rem;
+    text-align: center;
 }
 
 /* published date and name */
@@ -41,6 +42,7 @@
     align-items: center;
     justify-content: center;
     gap: 1rem;
+    margin-bottom: 3rem;
 }
 
 .published-section img{
@@ -107,6 +109,12 @@
     top: 2rem;
     left: 2rem;
     cursor: pointer;
+}
+
+@media (min-width: 799px){
+    .post-img{
+        height: 500px;
+    }
 }
 
 @media (min-width: 1000px){

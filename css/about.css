@@ -1,5 +1,5 @@
 .about-hero{
-    background: linear-gradient(rgba(0 ,0,0,0.5), rgba(0,0,0,0.5)), url(../images/pexels-francesco-ungaro-998653.jpg);
+    background: linear-gradient(rgba(0 ,0,0,0.4), rgba(0,0,0,0.4)), url(../images/pexels-francesco-ungaro-998653.jpg);
     background-position: center;
     background-size: cover;
 }

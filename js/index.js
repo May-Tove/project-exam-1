@@ -19,7 +19,7 @@ async function getPosts(url) {
                                         </div>
                                         </div>
                                         </div>
-                                        <p class="post-date">Published ${post.acf.date_posted}</p>
+                                        <p class="post-date">${post.title.rendered} | ${post.acf.date_posted}</p>
                                         <h3>${post.acf.main_heading}</h3>
                                     </a>
                                 </div>`;
@@ -70,3 +70,9 @@ async function getPosts(url) {
   }
 }
 getPosts(baseUrl);
+
+// video
+const switchBtn = document.querySelector(".switch-btn");
+const video = document.querySelector(".video-container");
+
+switchBtn.addEventListener("click", function () {});

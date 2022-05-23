@@ -62,29 +62,22 @@
         </div>
         <section class="blog-container main-container">
             <section class="filter-container">
-
                 <div class="continents">
-                        <label for="all">All</label>
-                        <input type="radio" value="10" class="continent" name="continent" id="all"/>
-
-                        <label for="europe">Europe</label>
-                        <input type="radio" value="5" class="continent" name="continent" id="europe"/>
-
-                        <label for="africa">Africa</label>
-                        <input type="radio" value="8" class="continent" name="continent" id="africa" />
-
-                        <label for="asia">Asia</label>
-                        <input type="radio" value="4" class="continent" name="continent" id="asia" />
-
-                        <label for="oceania">Oceania</label>
-                        <input type="radio" value="9" class="continent" name="continent" id="oceania" />
-
-                        <label for="south-america">South-America</label>
-                        <input type="radio" value="7" class="continent" name="continent" id="south-america" />
-
-                        <label for="north-america">North-America</label>
-                        <input type="radio" value="6" class="continent" name="continent" id="north-america" />
-                </div>
+                    <label for="continents">Continents:</label>
+                    <select name="continents" class="continent-select">
+                        <option value="10" class="continent" id="all">All</option>
+                        <option value="5" class="continent" id="europe">Europe</option>
+                        <option value="8" class="continent" id="africa">Africa</option>
+                        <option value="4" class="continent" id="asia">Asia</option>
+                        <option value="9" class="continent" id="oceania">Oceania</option>
+                        <option value="7" class="continent" id="south-america">
+                            South-America
+                        </option>
+                        <option value="6" class="continent" id="north-america">
+                            North-America
+                        </option>
+                    </select>
+                    </div>
                 <div class="search-container">
                     <label for="search-input"></label>
                     <input type="search" name="search" id="search-input" placeholder="Search posts" />
