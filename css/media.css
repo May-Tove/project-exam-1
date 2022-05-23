@@ -31,7 +31,6 @@
       .nav-links a{
         position: relative;
         color: white;
-        opacity: .8;
       }
 
       .nav-links a:hover, .nav-links a.active, .nav-links a:focus{
