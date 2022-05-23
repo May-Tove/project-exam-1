@@ -42,9 +42,9 @@ a{
     
     .active{
         font-weight: bold;
-        color: #A2D1C8;
+        color: var(--mainColor);
     }
 
     .active a{
-        color: #A2D1C8;
+        color: var(--mainColor);
     }

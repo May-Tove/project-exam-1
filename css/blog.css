@@ -11,16 +11,17 @@
 
 .filter-container{
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    padding: 3rem 0rem;
+    gap: 2rem;
+    margin-bottom: .5rem;
+    width: 100%;
 }
 
 /* search */
 .search-container{
     display: flex;
     align-items: center;
-    justify-content: center;
     gap: 2px;
 }
 
@@ -36,20 +37,24 @@
     background-color: transparent;
 }
 
+.search-btn{
+    border: 1px solid black;
+}
+
 .continent-select{
     border: 1px solid black;
     border-radius: 0;
     background-color: transparent;
     font-family: "catamaran", sans-serif;
     font-weight: 100;
-    padding: 7px;
 }
 
 
 .continents{
     display: flex;
     align-items: center;
-    gap: 1rem;
+    justify-content: space-between;
+    width: 100%;
 }
 
 
@@ -119,6 +124,24 @@ label input:checked{
 
 
 @media (min-width: 799px){
+    .filter-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 3rem 0rem;
+    }
+
+    .continents{
+        all: unset;
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+    }
+
+    .continent-select{
+        padding: 7px;
+    }
+
     .post-container{
       grid-template-columns: 1fr 1fr 1fr;
     }

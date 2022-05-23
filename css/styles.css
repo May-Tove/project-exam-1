@@ -152,7 +152,7 @@ input, textarea{
     background-color: var(--headerColor);
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    padding-top: 4rem;
     width: 100%;
     text-align: center;
     transform: translateX(100%);
