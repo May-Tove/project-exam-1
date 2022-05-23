@@ -102,6 +102,10 @@
   background-position: center;
 }
 
+.slide h3{
+    text-transform: none;
+}
+
 .slide .post-date {
   font-size: small;
   opacity: 0.8;
