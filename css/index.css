@@ -69,6 +69,11 @@
 
 
 /* latest posts section */
+.section-title{
+    text-align: center;
+    margin-top: 3rem;
+}
+
 .latest-posts {
   display: flex;
   flex-direction: column;
