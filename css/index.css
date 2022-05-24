@@ -33,11 +33,12 @@
 .home-hero h1,
 .home-hero p {
   width: 90vw;
+  text-align: center;
 }
 
 .home-hero p {
   font-size: 1.3rem;
-  letter-spacing: var(--letterSpacing): 0.2rem;
+  letter-spacing: .3rem;
   text-transform: none;
   color: white;
   text-align: center;
