@@ -7,7 +7,6 @@ async function getPosts(url) {
     const response = await fetch(url);
     const posts = await response.json();
     postContainer.innerHTML = "";
-    console.log(posts);
 
     posts.forEach(function (post) {
       postContainer.innerHTML += `<div class="slide"> 
