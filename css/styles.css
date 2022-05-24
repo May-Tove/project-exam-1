@@ -43,6 +43,7 @@ h1, h2, h3{
 }
 
 h1{
+    font-size: 1.8rem;
     font-weight: 900;
     text-transform: uppercase;
     color: var(--mainWhiteColor);
@@ -53,7 +54,7 @@ h2{
     font-family: "Abril Fatface", sans-serif;
     font-weight: 100;
     text-transform: uppercase;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     color: var(--mainColorDarkened);
 }
 

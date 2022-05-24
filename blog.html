@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="description" content="Read about my travel experience and get some tips on where to go next." />
+    <meta name="description" content="All the destinations i have visited so far." />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Globetrotter | Blog</title>
     <script src="https://kit.fontawesome.com/155738729b.js" crossorigin="anonymous"></script>
@@ -49,7 +49,7 @@
                 </ul>
             </nav>
             <button class="menu-btn">
-                <i class="fa-solid fa-bars hamburger"></i>
+                <i class="fa-solid fa-bars hamburger" aria-label="hamburger menu" tabindex="0"></i>
             </button>
         </div>
     </header>
@@ -65,11 +65,10 @@
         </div>
         <section class="blog-container main-container">
             <div class="filter-container">
-                <div class="search-container">
-                    <label for="search-input"></label>
-                    <input type="search" name="search" id="search-input" class="search-input" placeholder="Search posts" aria-label="search" />
-                    <button class="search-btn btn">Search</button>
-                </div>
+                    <div class="search-container">
+                        <input type="search" name="search" id="search-input" class="search-input" placeholder="Search posts" aria-label="Search for posts" />
+                        <button class="search-btn btn">Search</button>
+                    </div>
                 <div class="continents">
                     <ul class="post-nav">
                         <li><button class="continent active" value="10" id="all">All</button></li>

@@ -1,204 +1,126 @@
-.blog-hero{
-    background: linear-gradient(rgba(0 ,0,0,0.5), rgba(0,0,0,0.5)), url(../images/pexels-francesco-ungaro-2325446.jpg);
-    background-position: center;
-    background-size: cover;
+.blog-hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/pexels-francesco-ungaro-2325446.jpg);
+  background-position: center;
+  background-size: cover;
 }
 
-.blog-paragraph p{
-    max-width: 600px;
-    padding-bottom: 3rem;
-}
-
-.filter-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
-    margin-bottom: 1rem;
-    width: 100%;
+/* filter section */
+.filter-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 1rem;
+  width: 100%;
 }
 
 /* search */
-.search-container{
-    display: flex;
-    align-items: center;
-    gap: 2px;
+.search-container {
+  display: flex;
+  align-items: center;
+  gap: 2px;
 }
 
-.search-input, .search-btn{
-    padding: 7px;
-    border-radius: 0;
-    font-family: "catamaran", sans-serif;
-    font-weight: 100;
+.search-input,
+.search-btn {
+  padding: 7px;
+  border-radius: 0;
+  font-family: "catamaran", sans-serif;
+  font-weight: 100;
 }
 
-.search-input{
-    border: 1px solid black;
-    background-color: transparent;
+.search-input {
+  border: 1px solid black;
+  background-color: transparent;
 }
 
-.search-btn{
-    border: 1px solid black;
+.search-btn {
+  border: 1px solid black;
 }
 
 /* categories */
-.post-nav{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: .7rem;
+.post-nav {
+  display: flex;
+  gap: 0.6rem;
 }
 
-.post-nav li{
-    list-style: none;
+.post-nav li {
+  list-style: none;
 }
 
-.post-nav button{
-    cursor: pointer;
-    background: transparent;
-    border: 0;
-    text-transform: uppercase;
-    font-size: .8rem;
+.post-nav button {
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 200;
+  transition: all 0.3s;
 }
 
-.post-nav button:hover{
-    color: var(--mainColorDarkened);
+.post-nav button:hover {
+  color: var(--mainColorDarkened);
+  transition: all 0.3s;
 }
 
 /* posts section */
-.all-posts{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.all-posts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.post-container{
-    width: 85vw;
-    max-width: 600px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    grid-column-gap: 1.5rem;
-    grid-row-gap: 2rem;
+.post-container {
+  width: 85vw;
+  max-width: 600px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-column-gap: 1.5rem;
+  grid-row-gap: 2rem;
 }
 
-.post{
-    background-color: white;
-    transition: all 0.5s;
-    cursor: pointer;
+.post {
+  transition: all 0.5s;
+  cursor: pointer;
 }
 
-.post a h2{
-    color: white;
+.post a h2 {
+  color: var(--mainWhiteColor);
 }
 
-.post:hover{
-    transform:scale(1.02);
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
-    transition: all 0.5s;
-    }
-
-.post .featured-img{
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-    height: 370px;
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+.post:hover {
+  transform: scale(1.02);
+  box-shadow: var(--boxShadow);
+  transition: all 0.5s;
 }
 
-.post p{
-    max-width: 90%;
+.post .featured-img {
+  background-size: cover;
+  background-position: center;
+  height: 370px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
-.view-more-btn{
-    margin-top: 5rem;
+.view-more-btn {
+  margin-top: 5rem;
 }
 
+@media (min-width: 1200px) {
+  .filter-container {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 3rem 0rem;
+  }
 
-@media (min-width: 1200px){
-    .filter-container{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        padding: 3rem 0rem;
-    }
-
-    /*.continents{
-        all: unset;
-        display: flex;
-        align-items: center;
-        gap: .5rem;
-    }
-
-    .continent-select{
-        padding: 7px;
-    }*/
-.post-nav{
+  .post-nav {
     gap: 1.2rem;
-}
+  }
 
-.post-nav button{
+  .post-nav button {
     font-size: 1rem;
+  }
 }
-
-}
-
-/*<div class="continents">
-<label for="continents">Continents:</label>
-<select name="continents" class="continent-select">
-    <option value="10" class="continent" id="all">All</option>
-    <option value="5" class="continent" id="europe">Europe</option>
-    <option value="8" class="continent" id="africa">Africa</option>
-    <option value="4" class="continent" id="asia">Asia</option>
-    <option value="9" class="continent" id="oceania">Oceania</option>
-    <option value="7" class="continent" id="south-america">
-        South-America
-    </option>
-    <option value="6" class="continent" id="north-america">
-        North-America
-    </option>
-</select>
-</div>*/
-
-/*
-                <div class="continents">
-                        <label for="all">All</label>
-                        <input type="radio" value="10" class="continent" name="continent" id="all"/>
-
-                        <label for="europe">Europe</label>
-                        <input type="radio" value="5" class="continent" name="continent" id="europe"/>
-
-                        <label for="africa">Africa</label>
-                        <input type="radio" value="8" class="continent" name="continent" id="africa" />
-
-                        <label for="asia">Asia</label>
-                        <input type="radio" value="4" class="continent" name="continent" id="asia" />
-
-                        <label for="oceania">Oceania</label>
-                        <input type="radio" value="9" class="continent" name="continent" id="oceania" />
-
-                        <label for="south-america">South-America</label>
-                        <input type="radio" value="7" class="continent" name="continent" id="south-america" />
-
-                        <label for="north-america">North-America</label>
-                        <input type="radio" value="6" class="continent" name="continent" id="north-america" />
-                </div>*/
-
-                /*                    <label for="continents">Continents:</label>
-                    <select name="continents" id="continents" class="continent-select">
-                        <option value="10" class="continent" id="all">All</option>
-                        <option value="5" class="continent" id="europe">Europe</option>
-                        <option value="8" class="continent" id="africa">Africa</option>
-                        <option value="4" class="continent" id="asia">Asia</option>
-                        <option value="9" class="continent" id="oceania">Oceania</option>
-                        <option value="7" class="continent" id="south-america">
-                            South-America
-                        </option>
-                        <option value="6" class="continent" id="north-america">
-                            North-America
-                        </option>
-                    </select>*/

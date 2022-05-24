@@ -1,3 +1,4 @@
+// fetching posts
 const baseUrl =
   "https://mayth.one/project-exam/wp-json/wp/v2/destinations?acf_format=standard";
 const postContainer = document.querySelector(".post-container");
@@ -8,7 +9,6 @@ async function getPosts(url) {
     const response = await fetch(url);
     const posts = await response.json();
     postContainer.innerHTML = "";
-    console.log(posts);
 
     posts.forEach(function (post) {
       postContainer.innerHTML += `<div class="post ${post.title.rendered}">
@@ -20,7 +20,6 @@ async function getPosts(url) {
                                     </div>`;
     });
   } catch (error) {
-    console.log(error);
     postContainer.innerHTML = displayError("an error occurred");
   }
 }
@@ -49,7 +48,7 @@ continents.forEach(function (continent) {
   };
 });
 
-// add active class to button that is clicked and remove it from all others
+// add active class to continent-button that is clicked and remove it from all others
 continents.forEach((button) => {
   button.addEventListener("click", function () {
     continents.forEach((btn) => btn.classList.remove("active"));
