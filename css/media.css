@@ -9,7 +9,7 @@
     .logo img{
         max-width: 190px;
     }
-    .hamburger{
+    .menu-btn, .hamburger, .close-menu{
         display: none;
     }
     .nav-links{
@@ -19,9 +19,6 @@
           justify-content: space-between;
       }
       
-      .close-menu{
-        display: none;
-      }
       
       .nav-links li{
           opacity: 1;

@@ -41,7 +41,24 @@
     border: 1px solid black;
 }
 
-.continent-select{
+.post-nav{
+    display: flex;
+    gap: 1rem;
+}
+
+.post-nav li{
+    list-style: none;
+}
+
+.post-nav button{
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    text-transform: uppercase;
+}
+
+
+/*.continent-select{
     border: 1px solid black;
     border-radius: 0;
     background-color: transparent;
@@ -64,7 +81,7 @@
 
 label input:checked{
     font-weight: bold;
-}
+}*/
 
 /* posts section */
 .all-posts{
@@ -128,7 +145,7 @@ label input:checked{
         padding: 3rem 0rem;
     }
 
-    .continents{
+    /*.continents{
         all: unset;
         display: flex;
         align-items: center;
@@ -137,7 +154,7 @@ label input:checked{
 
     .continent-select{
         padding: 7px;
-    }
+    }*/
 
     .post-container{
       grid-template-columns: repeat(auto-fill, minmax(280px, 1fr))
@@ -184,3 +201,18 @@ label input:checked{
                         <label for="north-america">North-America</label>
                         <input type="radio" value="6" class="continent" name="continent" id="north-america" />
                 </div>*/
+
+                /*                    <label for="continents">Continents:</label>
+                    <select name="continents" id="continents" class="continent-select">
+                        <option value="10" class="continent" id="all">All</option>
+                        <option value="5" class="continent" id="europe">Europe</option>
+                        <option value="8" class="continent" id="africa">Africa</option>
+                        <option value="4" class="continent" id="asia">Asia</option>
+                        <option value="9" class="continent" id="oceania">Oceania</option>
+                        <option value="7" class="continent" id="south-america">
+                            South-America
+                        </option>
+                        <option value="6" class="continent" id="north-america">
+                            North-America
+                        </option>
+                    </select>*/

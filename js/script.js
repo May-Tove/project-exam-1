@@ -1,13 +1,14 @@
 // showing menu when clicked on mobile version
 const showMenu = () => {
-  const hamburger = document.querySelector(".hamburger");
+  const menuBtn = document.querySelector(".menu-btn");
+  const closeMenuButton = document.querySelector(".close-menu");
   const mainMenu = document.querySelector(".nav-links");
 
-  hamburger.addEventListener("click", () => {
+  menuBtn.addEventListener("click", () => {
     mainMenu.classList.toggle("show");
   });
 
-  hamburger.addEventListener("onkeydown", () => {
+  menuBtn.addEventListener("onkeydown", () => {
     mainMenu.classList.toggle("show");
   });
 };

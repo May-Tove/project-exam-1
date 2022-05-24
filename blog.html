@@ -11,7 +11,9 @@
     <link rel="stylesheet" href="https://use.typekit.net/kpl5sem.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Catamaran:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Catamaran:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/blog.css" />
     <link rel="stylesheet" href="css/media.css" />
@@ -47,7 +49,9 @@
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
-            <i class="fa-solid fa-bars hamburger"></i>
+            <button class="menu-btn">
+                <i class="fa-solid fa-bars hamburger"></i>
+            </button>
         </div>
     </header>
     <main>
@@ -60,7 +64,6 @@
                 <a href="blog.html" class="active">Blog</a>
             </nav>
         </div>
-        <h2 class="section-title">All posts</h2>
         <section class="blog-container main-container">
             <div class="filter-container">
                 <div class="search-container">
@@ -69,22 +72,17 @@
                     <button class="search-btn btn">Search</button>
                 </div>
                 <div class="continents">
-                    <label for="continents">Continents:</label>
-                    <select name="continents" id="continents" class="continent-select">
-                        <option value="10" class="continent" id="all">All</option>
-                        <option value="5" class="continent" id="europe">Europe</option>
-                        <option value="8" class="continent" id="africa">Africa</option>
-                        <option value="4" class="continent" id="asia">Asia</option>
-                        <option value="9" class="continent" id="oceania">Oceania</option>
-                        <option value="7" class="continent" id="south-america">
-                            South-America
-                        </option>
-                        <option value="6" class="continent" id="north-america">
-                            North-America
-                        </option>
-                    </select>
-                    </div>
+                    <ul class="post-nav">
+                        <li><button class="continent active" value="10" id="all">All</button></li>
+                        <li><button class="continent" value="4" id="asia">Asia</button></li>
+                        <li><button class="continent" value="8" id="africa">Africa</button></li>
+                        <li><button class="continent" value="5" id="europe">Europe</button></li>
+                        <li><button class="continent" value="9" id="oceania">Oceania</button></li>
+                        <li><button class="continent" value="7" id="south-america">South-America</button></li>
+                        <li><button class="continent" value="6" id="north-america">North-America</button></li>
+                    </ul>
                 </div>
+            </div>
             <div class="all-posts">
                 <div class="post-container">
                     <div class="loader"></div>
