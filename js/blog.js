@@ -21,34 +21,20 @@ async function getPosts(url) {
     });
   } catch (error) {
     console.log(error);
-    postContainer.innerHTML = displayError("An error occurred");
+    postContainer.innerHTML = displayError("an error occurred");
   }
 }
 getPosts(baseUrl);
 
 //categories
-const continents = document.querySelectorAll(".continents");
+const continents = document.querySelectorAll(".post-nav button");
 const continentUrl =
   "https://mayth.one/project-exam/wp-json/wp/v2/destinations";
 
-/*categories.onchange = function () {
-  let newUrl;
-  const continentChosen = categories.value;
-  if (categories.value === "10") {
-    newUrl = baseUrl;
-    viewMore.style.display = "block";
-  } else {
-    newUrl =
-      continentUrl + `?categories=${continentChosen}&acf_format=standard`;
-    viewMore.style.display = "none";
-  }
-  postContainer.innerHTML = "";
-  getPosts(newUrl);
-};*/
+// filter on category
 continents.forEach(function (continent) {
   continent.onclick = function (event) {
     let newUrl;
-    console.log(event.target.value);
     const continentChosen = event.target.value;
     if (event.target.id === "all") {
       newUrl = baseUrl;
@@ -58,8 +44,17 @@ continents.forEach(function (continent) {
         continentUrl + `?categories=${continentChosen}&acf_format=standard`;
       viewMore.style.display = "none";
     }
+
     getPosts(newUrl);
   };
+});
+
+// add active class to button that is clicked and remove it from all others
+continents.forEach((button) => {
+  button.addEventListener("click", function () {
+    continents.forEach((btn) => btn.classList.remove("active"));
+    this.classList.add("active");
+  });
 });
 
 // search for posts

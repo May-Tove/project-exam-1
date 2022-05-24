@@ -14,7 +14,7 @@
     flex-direction: column;
     align-items: center;
     gap: 2rem;
-    margin-bottom: .5rem;
+    margin-bottom: 1rem;
     width: 100%;
 }
 
@@ -41,9 +41,12 @@
     border: 1px solid black;
 }
 
+/* categories */
 .post-nav{
     display: flex;
-    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    gap: .7rem;
 }
 
 .post-nav li{
@@ -55,6 +58,11 @@
     background: transparent;
     border: 0;
     text-transform: uppercase;
+    font-size: .8rem;
+}
+
+.post-nav button:hover{
+    color: var(--mainColorDarkened);
 }
 
 
@@ -95,7 +103,7 @@ label input:checked{
     max-width: 1000px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     grid-column-gap: 1.5rem;
     grid-row-gap: 2rem;
 }
@@ -136,7 +144,7 @@ label input:checked{
 }
 
 
-@media (min-width: 799px){
+@media (min-width: 1000px){
     .filter-container{
         display: flex;
         flex-direction: row;
@@ -155,10 +163,14 @@ label input:checked{
     .continent-select{
         padding: 7px;
     }*/
+.post-nav{
+    gap: 1.2rem;
+}
 
-    .post-container{
-      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr))
-    }
+.post-nav button{
+    font-size: 1rem;
+}
+
 }
 
 /*<div class="continents">
