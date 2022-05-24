@@ -31,9 +31,13 @@
     object-fit: cover;
 }
 
-.intro-section h1{
+.intro-section{
+    align-items: center;
+}
+.intro-section h2{
     margin-bottom: 1rem;
     text-align: center;
+    max-width: 800px;
 }
 
 /* published date and name */
