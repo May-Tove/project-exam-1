@@ -85,7 +85,7 @@ textarea {
   margin-top: 1rem;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
   .contact-container {
     display: flex;
     gap: 3rem;

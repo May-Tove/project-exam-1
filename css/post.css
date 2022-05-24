@@ -122,7 +122,7 @@
     }
 }
 
-@media (min-width: 1000px){
+@media (min-width: 1200px){
     .post-img:hover{
         cursor: pointer;
         transform: scale(1.02);
@@ -142,8 +142,8 @@
         height: 100%;
         object-fit: cover;
         position: absolute;
-        right: 0px;
-        top: 0px;
+        right: 0;
+        top: 0;
     }
 
     .memory-card{

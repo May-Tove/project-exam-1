@@ -21,7 +21,7 @@
 }
 
 
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
     .about-container{
         position: relative;
         height: 85vh;
@@ -40,9 +40,9 @@
 
     .about-img{
         position: absolute;
-        right: 0px;
-        top: 0px;
-        bottom: 0px;
+        right: 0;
+        top: 0;
+        bottom: 0;
         width: 100%;
         max-width: 600px;
         height: 100%;

@@ -2,10 +2,11 @@
     --mainColor: #00807D;
     --mainColorDarkened: #00605E;
     --mainLightColor:rgb(255, 255, 252);
-    --headerColor: #FFFEF7;
-    --footerColor: #FFFEF7;
+    --headerFooterColor: #FFFEF7;
+    --mainWhiteColor: #FFF;
     --btnColor: #000;
     --transition: all .3s;
+    --letterSpacing: .2rem;
 
 
 }

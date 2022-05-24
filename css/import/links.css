@@ -25,10 +25,7 @@ a{
 }
 
 .breadcrumbs{
-    padding: 3rem 0rem;
-    width: 85vw;
-    max-width: 1000px;
-    margin: 0 auto;
+    padding-top: 3rem;
     }
     
     .breadcrumbs a{

@@ -41,7 +41,7 @@
         background: white;
         position: absolute;
         top: 52px;
-        left: 0px;
+        left: 0;
         border-radius: 5px;
       }
 
@@ -62,4 +62,10 @@
       .navbar-change a{
         color: black;
     }
+}
+
+@media (min-width: 1200px){
+  .main-container, .post-container{
+    max-width: 1000px;
+  }
 }

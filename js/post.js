@@ -18,7 +18,6 @@ async function getPost() {
     const details = await response.json();
     heroContainer.innerHTML = "";
     postContainer.innerHTML = "";
-    console.log(details);
     displayPost(details);
   } catch (error) {
     console.log(error);
@@ -50,23 +49,23 @@ function displayPost(details) {
                                 <p>Published ${details.acf.date_posted} by ${details.acf.author} </p>
                             </div>
                             <div class="intro-section">
-                            <h1>${details.acf.main_heading}</h1>
+                            <h2>${details.acf.main_heading}</h2>
                                 <p>${details.acf.first_paragraph}</p>
                                 <p>${details.acf.second_paragraph}</p>
                             </div>
                             <div class="memory-section">
                                 <div class="memory-card">
-                                    <h2>${details.acf.memory_heading}</h2>
+                                    <h3>${details.acf.memory_heading}</h3>
                                     <p>${details.acf.memory_paragraph}</p>
                                     <p>${details.acf.memory_paragraph_2}</p>
                                 </div>
                                     <img src="${details.acf.memory_image.url}" alt="${details.acf.memory_image.title}" class="memory-img post-img" />
                             </div>
                             <div class="city-section">
-                                <h1 class="section-title">Top 4 places to visit</h1>
+                                <h2 class="section-title">Top 4 places to visit</h2>
                                 <div class="city-1">
                                     <div class="city-text">
-                                    <h2>${details.acf.city_heading_1}</h2>
+                                    <h3>${details.acf.city_heading_1}</h3>
                                     <p>${details.acf.city_paragraph_1}</p>
                                     <p>${details.acf.sub_paragraph_1}</p>
                                     </div>
@@ -74,7 +73,7 @@ function displayPost(details) {
                                 </div>
                                 <div class="city-2">
                                     <div class="city-text">
-                                    <h2>${details.acf.city_heading_2}</h2>
+                                    <h3>${details.acf.city_heading_2}</h3>
                                     <p>${details.acf.city_paragraph_2}</p>
                                     <p>${details.acf.sub_paragraph_2}</p>
                                     </div>
@@ -82,7 +81,7 @@ function displayPost(details) {
                                 </div>
                                 <div class="city-3">
                                     <div class="city-text">
-                                    <h2>${details.acf.city_heading_3}</h2>
+                                    <h3>${details.acf.city_heading_3}</h3>
                                     <p>${details.acf.city_paragraph_3}</p>
                                     <p>${details.acf.sub_paragraph_3}</p>
                                     </div>
@@ -90,7 +89,7 @@ function displayPost(details) {
                                 </div>
                                 <div class="city-4">
                                     <div class="city-text">
-                                    <h2>${details.acf.city_heading_4}</h2>
+                                    <h3>${details.acf.city_heading_4}</h3>
                                     <p>${details.acf.city_paragraph_4}</p>
                                     <p>${details.acf.sub_paragraph_4}</p>
                                     </div>

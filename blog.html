@@ -41,7 +41,7 @@
             <a href="index.html" class="logo logo-dark"><img src="./images/logo-green.png" alt="logo" /></a>
             <nav class="main-menu">
                 <ul class="nav-links">
-                    <i class="fa-solid fa-xmark close-menu"></i>
+                    <li><i class="fa-solid fa-xmark close-menu" aria-label="close icon" tabindex="0"></i></li>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="blog.html" class="active">Blog</a></li>
                     <li><a href="about.html">About</a></li>
@@ -57,7 +57,7 @@
         <section class="blog-hero hero">
             <h1>Blog</h1>
         </section>
-        <div class="breadcrumbs">
+        <div class="breadcrumbs main-container">
             <nav>
                 <a href="index.html">Home /</a>
                 <a href="blog.html" class="active">Blog</a>
@@ -67,7 +67,7 @@
             <div class="filter-container">
                 <div class="search-container">
                     <label for="search-input"></label>
-                    <input type="search" name="search" id="search-input" placeholder="Search posts" aria-label="search" />
+                    <input type="search" name="search" id="search-input" class="search-input" placeholder="Search posts" aria-label="search" />
                     <button class="search-btn btn">Search</button>
                 </div>
                 <div class="continents">
