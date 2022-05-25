@@ -5,6 +5,17 @@
   background-size: cover;
 }
 
+.post-container{
+  position: relative;
+  min-height: 40vh;
+}
+
+.loader{
+  position: absolute;
+  top: 25%;
+  left: 46%;
+}
+
 /* filter section */
 .filter-container {
   display: flex;

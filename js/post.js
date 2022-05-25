@@ -54,7 +54,7 @@ function displayPost(details) {
                                     <p>${details.acf.memory_paragraph}</p>
                                     <p>${details.acf.memory_paragraph_2}</p>
                                 </div>
-                                    <img src="${details.acf.memory_image.url}" alt="${details.acf.memory_image.title}" class="memory-img post-img" />
+                                    <img src="${details.acf.memory_image.url}" alt="${details.acf.memory_image.title}" class="memory-img post-img" tabindex="0" />
                             </div>
                             <div class="city-section">
                                 <h2 class="section-title">Top 4 places to visit</h2>
@@ -95,23 +95,16 @@ function displayPost(details) {
   // image modal
   const images = document.querySelectorAll(".post-img");
   const modal = document.querySelector(".modal");
-  const modalTxt = document.querySelector(".modal-txt");
-  const modalImg = document.querySelector(".modal-img");
-  const closeModal = document.querySelector(".close-modal");
+  const modalContent = document.querySelector(".modal-content");
 
   // open modal when image is clicked
   images.forEach((image) => {
     image.addEventListener("click", () => {
-      modalImg.src = image.src;
-      modalTxt.innerHTML = image.alt;
+      modalContent.innerHTML = `<img src="${image.src}" alt="${image.alt}" class="modal-img">
+                                <span class="modal-txt">${image.alt}</span>`;
       modal.style.display = "block";
     });
   });
-
-  // close modal when close icon is clicked
-  closeModal.onclick = function () {
-    modal.style.display = "none";
-  };
 
   // close modal when clicking outside of image
   window.onclick = function (event) {
