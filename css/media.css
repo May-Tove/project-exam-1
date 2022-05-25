@@ -65,7 +65,11 @@
 }
 
 @media (min-width: 1200px){
-  .main-container, .post-container{
+  .about-container, .contact-container, .specific-post-container, .breadcrumbs{
     max-width: 1000px;
+  }
+
+  .blog-container, .post-container{
+    max-width: 1200px;
   }
 }

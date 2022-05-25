@@ -2,7 +2,6 @@ const postContainer = document.querySelector(".specific-post");
 const heroContainer = document.querySelector(".post-hero");
 const postActiveLink = document.querySelector(".post-detail");
 const postTitle = document.querySelector(".post-title");
-const metaDescription = document.querySelector(".meta-description");
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 const id = params.get("id");
@@ -20,7 +19,6 @@ async function getPost() {
     postContainer.innerHTML = "";
     displayPost(details);
   } catch (error) {
-    console.log(error);
     heroContainer.innerHTML = displayError("An error occurred");
     postContainer.innerHTML = displayError("An error occurred");
   }
@@ -29,9 +27,6 @@ getPost();
 
 // creating HTML
 function displayPost(details) {
-  // changing meta description to match current post
-  metaDescription.innerHTML = `content="Read about my amazing trip to ${details.title.rendered}"`;
-
   // changing page title to match current post
   postTitle.innerHTML = `Globetrotter | ${details.title.rendered}`;
 

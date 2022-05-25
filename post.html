@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" class="meta-description" content="Read about my travel experience and get some tips on where to go next.">
+    <meta name="description" content="Read about my travel experience and get some tips on where to go next.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title class="post-title"></title>
     <script src="https://kit.fontawesome.com/155738729b.js" crossorigin="anonymous"></script>
@@ -34,14 +34,14 @@
             <a href="index.html" class="logo logo-dark"><img src="./images/logo-green.png" alt="logo"/></a>
             <nav class="main-menu">
                 <ul class="nav-links">
-                    <li><i class="fa-solid fa-xmark close-menu" aria-label="close icon" tabindex="0"></i></li>
+                    <li><i class="fa-solid fa-xmark close-menu"></i></li>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="blog.html" class="active">Blog</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
-            <button class="menu-btn">
+            <button class="menu-btn" aria-label="hamburger menu">
                 <i class="fa-solid fa-bars hamburger"></i>
             </button>
         </div>
@@ -55,7 +55,7 @@
                 <a href="post.html" class="active post-detail"></a>
             </nav>
         </div>
-        <section class="main-container">
+        <section class="main-container specific-post-container">
             <div class="specific-post">
                 <div class="loader"></div>
             </div>
@@ -68,8 +68,8 @@
             </div>
         </section>
     </main>
-    <script src="js/script.js" type="module"></script>
-    <script src="js/post.js" type="module"></script>
+    <script defer src="js/script.js" type="module"></script>
+    <script defer src="js/post.js" type="module"></script>
     <footer>
         <a href="index.html" class="logo"><img src="./images/logo-green.png" alt="logo"/></a>
         <div class="footer-links">

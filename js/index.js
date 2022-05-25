@@ -30,7 +30,7 @@ async function getPosts(url) {
 
       // moving slides
       slides.forEach(function (slide, index) {
-        slide.style.left = `${index * 70}vw`;
+        slide.style.left = `${index * 100}%`;
       });
 
       let counter = 0;
@@ -50,16 +50,16 @@ async function getPosts(url) {
       // make carousel infinite
       function carousel() {
         // going back to first slide when clicking next button when on the last slide
-        if (counter === 4) {
+        if (counter === 9) {
           counter = 0;
         }
         // going to last slide when clicking prev button from the first slide
         if (counter < 0) {
-          counter = 4 - 1;
+          counter = 9 - 1;
         }
 
         slides.forEach(function (slide) {
-          slide.style.transform = `translateX(-${counter * 70}vw)`;
+          slide.style.transform = `translateX(-${counter * 100}%)`;
         });
       }
     });

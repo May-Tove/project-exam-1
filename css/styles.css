@@ -27,7 +27,7 @@ main{
     padding-bottom: 3rem;
 }
 
-.main-container{
+.main-container, .breadcrumbs{
     width: 85vw;
     max-width: 600px;
     margin: 0 auto;

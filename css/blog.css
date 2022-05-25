@@ -72,7 +72,7 @@
 
 .post-container {
   width: 85vw;
-  max-width: 600px;
+  max-width: 900px;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   grid-column-gap: 1.5rem;
