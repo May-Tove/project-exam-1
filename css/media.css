@@ -73,3 +73,9 @@
     max-width: 1200px;
   }
 }
+
+@media (min-width: 1500px){
+  .navbar-center{
+    max-width: 1450px;
+  }
+}

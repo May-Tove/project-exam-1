@@ -37,10 +37,10 @@
 }
 
 .home-hero p {
-  font-size: 1.3rem;
-  letter-spacing: .3rem;
-  text-transform: none;
-  color: white;
+  font-size: .8rem;
+  letter-spacing: .2rem;
+  text-transform: uppercase;
+  color: var(--mainWhiteColor);
   text-align: center;
 }
 
@@ -79,6 +79,7 @@
   margin-top: 3rem;
 }
 
+/* aligning title, content and button */
 .latest-posts {
   display: flex;
   flex-direction: column;
@@ -135,41 +136,9 @@
   text-transform: none;
 }
 
-/* hovering on posts */
-.slide h3 {
-  transition: all 0.3s;
-}
-.slide:hover h3,
-.slide:focus h3 {
-  color: var(--mainColorDarkened);
-  transition: all 0.3s;
-}
-
-.overlay {
-  background-color: rgba(0, 0, 0, 0.5);
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.5s;
+/* hide overlay on hover on larger screensize */
+.overlay{
   opacity: 0;
-}
-
-.overlay-title {
-  color: white;
-}
-
-.slide:hover .overlay,
-.slide:focus .overlay {
-  opacity: 1;
-  transition: all 0.5s;
-}
-
-.slide:hover .overlay-title,
-.slide:focus .overlay-title {
-  color: white;
-  transition: all 0.5s;
 }
 
 /* carousel buttons*/
@@ -189,14 +158,21 @@
 }
 
 .next-btn {
-  right: 5px;
+  right: 15px;
 }
 
 .prev-btn {
-  left: 5px;
+  left: 15px;
 }
 
 @media (min-width: 768px) {
+  .next-btn {
+    right: 50px;
+  }
+  
+  .prev-btn {
+    left: 50px;
+  }
 
   .slide {
     padding: .5rem;
@@ -206,14 +182,50 @@
 }
 
 @media (min-width: 1000px) {
+  /* hovering on posts */
+.slide h3 {
+  transition: all 0.3s;
+}
+.slide:hover h3,
+.slide:focus h3 {
+  color: var(--mainColorDarkened);
+  transition: all 0.3s;
+}
 
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+}
+
+.overlay-title {
+  color: var(--mainWhiteColor);
+}
+
+.slide:hover .overlay,
+.slide:focus .overlay {
+  opacity: 1;
+  transition: all 0.5s;
+}
+
+.slide:hover .overlay-title,
+.slide:focus .overlay-title {
+  color: var(--mainWhiteColor);
+  transition: all 0.3s;
+}
+
+/* width of slide */
   .slide {
     min-width: 33.33%;
   }
 }
 
 @media (min-width: 1224px) {
-
+/* width of slide */
   .slide {
     min-width: 25%;
   }

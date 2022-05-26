@@ -185,7 +185,10 @@ footer{
     margin: 0 auto;
     background-color: var(--headerFooterColor);
     box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
-    padding-top: 2rem;
+}
+
+.footer-logo{
+    margin: 2rem;
 }
 
 .footer-links{
@@ -194,7 +197,7 @@ footer{
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    gap: 1  rem;
+    gap: 1rem;
     border-bottom: .5px solid #CBCBCB;
     padding-bottom: 2rem;
     margin-bottom: 2rem;
