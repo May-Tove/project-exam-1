@@ -121,7 +121,7 @@
   .highlight-card {
     box-shadow: var(--boxShadow);
     background-color: var(--mainLightColor);
-    padding: 4rem;
+    padding: 3rem;
     max-width: 470px;
     position: absolute;
     top: 50%;
