@@ -53,7 +53,7 @@
 }
 
 .search-btn {
-  padding: 11px;
+  padding: 9px;
 }
 
 /* categories */
@@ -99,7 +99,7 @@
 }
 
 .post {
-  transition: all 0.5s;
+  transition: var(--transition);
   cursor: pointer;
 }
 

@@ -29,6 +29,7 @@ async function getPosts(url) {
       const prevBtn = document.querySelector(".prev-btn");
 
       // moving slides
+
       slides.forEach(function (slide, index) {
         slide.style.left = `${index * 100}%`;
       });

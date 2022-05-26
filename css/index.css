@@ -1,32 +1,11 @@
 /* hero */
-/*.home-hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)),
-    url(../images/ian-dooley-DuBNA1QMpPA-unsplash.jpg);
-  background-position: top;
-  background-size: cover;
-  height: 80vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-}
-
-.home-hero h1,
-.home-hero p {
-  color: white;
-  text-align: center;
-  max-width: 90vw;
-  margin: 0 auto;
-}
-
-.home-hero h1 {
-  font-family: "Abril Fatface", sans-serif;
-}*/
-
 .home-hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
+    url(../images/pexels-tomáš-malík-1670457.jpg);
+  background-position: center;
+  background-size: cover;
   justify-content: center;
-  gap: 0.2rem;
+  gap: 0.5rem;
   padding-bottom: 0;
 }
 
@@ -41,36 +20,6 @@
   letter-spacing: .2rem;
   text-transform: uppercase;
   color: var(--mainWhiteColor);
-  text-align: center;
-}
-
-.home-hero h1::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 70vh;
-  max-height: 900px;
-  background: rgba(0, 0, 0, 0.6);
-  z-index: -1;
-}
-
-.video-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 70vh;
-  max-height: 900px;
-  object-fit: cover;
-  z-index: -2;
-}
-
-
-
-.switch-slide .switch{
-  left: 50%;
 }
 
 /* latest posts section */
@@ -143,14 +92,10 @@
   top: 50%;
   transform: translateY(-50%);
   background: none;
-  background-color: transparent;
   border: none;
-  color: black;
-  text-align: center;
   font-size: 2rem;
   cursor: pointer;
   z-index: 10;
-  transition: all 0.3s;
 }
 
 .next-btn {
@@ -183,12 +128,12 @@
 @media (min-width: 1000px) {
   /* hovering on posts */
 .slide h3 {
-  transition: all 0.3s;
+  transition: var(--transition);
 }
 .slide:hover h3,
 .slide:focus h3 {
   color: var(--mainColorDarkened);
-  transition: all 0.3s;
+  transition: var(--transition);
 }
 
 .overlay {
@@ -199,7 +144,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  transition: all 0.3s;
+  transition: var(--transition);
 }
 
 .overlay-title {
@@ -210,13 +155,13 @@
 .slide:hover .overlay,
 .slide:focus .overlay {
   opacity: 1;
-  transition: all 0.3s;
+  transition: var(--transition);
 }
 
 .slide:hover .overlay-title,
 .slide:focus .overlay-title {
   color: var(--mainWhiteColor);
-  transition: all 0.3s;
+  transition: var(--transition);
 }
 
 /* width of slide */
