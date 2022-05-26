@@ -34,8 +34,8 @@ main{
     margin-bottom: 3rem;
 }
 
-h1, h4, p, label{
-    font-family: "catamaran", sans-serif;
+h1, h3, h4, p, label{
+    font-family: "montserrat", sans-serif;
 }
 
 h1, h2, h3{
@@ -52,15 +52,14 @@ h1{
 
 h2{
     font-family: "Abril Fatface", sans-serif;
-    font-weight: 100;
     text-transform: uppercase;
     font-size: 1.5rem;
     color: var(--mainColorDarkened);
 }
 
 h3{
-    font-family: "abril fatface", sans-serif;
     text-transform: uppercase;
+    font-weight: 800;
     font-size: 1.2rem;
     color: var(--mainColor);
 }
@@ -69,8 +68,11 @@ h4{
     font-weight: 400;
 }
 
-p, label{
-    font-weight: 100;
+p, label, input{
+    font-weight: 300;
+    letter-spacing: .5px;
+    line-height: 1.4rem;
+    font-size: 14px;
 }
 
 input, textarea{
@@ -207,7 +209,7 @@ footer{
 }
 
 .copyright{
-    font-family: "catamaran", sans-serif;
+    font-family: "montserrat", sans-serif;
     font-size: small;
     color: rgb(92, 92, 92);
     padding: 2rem;
@@ -227,9 +229,10 @@ footer{
 
   /* Fetch error */
 .fetchError {
-    background-color: #ffcccb;
+    margin: 0 auto;
+    background-color: red;
     padding: 20px;
-    color: darkred;
-    width: fit-content;
-    border: 1px solid darkred;
+    color: var(--mainWhiteColor);
+    font-family: "montserrat", sans-serif;
+    text-align: center;
   }

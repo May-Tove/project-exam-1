@@ -20,7 +20,9 @@ async function getPosts(url) {
                                     </div>`;
     });
   } catch (error) {
-    postContainer.innerHTML = displayError("an error occurred");
+    postContainer.innerHTML = displayError(
+      "Ops! An error occurred trying to get all blog posts"
+    );
   }
 }
 getPosts(baseUrl);

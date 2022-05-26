@@ -1,20 +1,20 @@
 a{
     text-decoration: none;
     color: black;
-    font-family: "catamaran", sans-serif;
+    font-family: "montserrat", sans-serif;
     text-transform: uppercase;
     letter-spacing: .1rem;
 }
 
 .btn{
-    padding: .5rem 1.5rem;
+    padding: .8rem 1.5rem;
     background-color: var(--btnColor);
     border: none;
     color: white;
     text-transform: uppercase;
     text-align: center;
     letter-spacing: .1rem;
-    font-family: "catamaran", sans-serif;
+    font-family: "montserrat", sans-serif;
     cursor: pointer;
     transition: 0.5s ease;
 }

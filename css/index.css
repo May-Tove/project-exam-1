@@ -113,9 +113,10 @@
 }
 
 .slide h3 {
-    font-family: "catamaran", sans-serif;
   text-transform: none;
   max-width: 95%;
+  font-weight: 600;
+  font-size: 1rem;
 }
 
 .slide .post-date {

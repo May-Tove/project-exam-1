@@ -19,8 +19,9 @@ async function getPost() {
     postContainer.innerHTML = "";
     displayPost(details);
   } catch (error) {
-    heroContainer.innerHTML = displayError("An error occurred");
-    postContainer.innerHTML = displayError("An error occurred");
+    postContainer.innerHTML = displayError(
+      "Ops! An error occurred trying to load the blog post"
+    );
   }
 }
 getPost();
@@ -34,22 +35,20 @@ function displayPost(details) {
   postActiveLink.innerHTML = `${details.title.rendered}`;
 
   // changing hero-image to match current post
-  heroContainer.innerHTML = `<div style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(${details.acf.featured_image})" class="featured-img">
+  heroContainer.innerHTML = `<div style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(${details.acf.featured_image})" class="featured-img hero">
                                 <h1>${details.title.rendered}</h1>
                             </div>`;
 
   // creating the actual post
-  postContainer.innerHTML = `<div class="published-section">
-                                <img src="${details.acf.author_img}" alt="" class="author-img">
-                                <p>Published ${details.acf.date_posted} by ${details.acf.author} </p>
-                            </div>
+  postContainer.innerHTML = `
                             <div class="intro-section">
                             <h2>${details.acf.main_heading}</h2>
+                            <p class="small-txt">Published ${details.acf.date_posted}</p>
                                 <p>${details.acf.first_paragraph}</p>
                                 <p>${details.acf.second_paragraph}</p>
                             </div>
-                            <div class="memory-section">
-                                <div class="memory-card">
+                            <div class="highlight-section">
+                                <div class="highlight-card">
                                     <h3>${details.acf.memory_heading}</h3>
                                     <p>${details.acf.memory_paragraph}</p>
                                     <p>${details.acf.memory_paragraph_2}</p>
@@ -57,7 +56,7 @@ function displayPost(details) {
                                     <img src="${details.acf.memory_image.url}" alt="${details.acf.memory_image.title}" class="memory-img post-img" tabindex="0" />
                             </div>
                             <div class="city-section">
-                                <h2 class="section-title">Top 4 places to visit</h2>
+                                <h2 class="section-title">Top four places to visit</h2>
                                 <div class="city-1">
                                     <div class="city-text">
                                     <h3>${details.acf.city_heading_1}</h3>

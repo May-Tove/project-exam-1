@@ -20,9 +20,7 @@ textarea {
   border: 1px solid black;
   background: transparent;
   cursor: text;
-  font-family: "catamaran", sans-serif;
-  font-weight: 100;
-  font-size: 0.9rem;
+  font-family: "montserrat", sans-serif;
 }
 
 textarea {
@@ -44,8 +42,9 @@ textarea {
 /* form error */
 .form-error {
   color: red;
-  font-family: "catamaran", sans-serif;
-  font-weight: 100;
+  font-family: "montserrat", sans-serif;
+  font-weight: 300;
+  font-size: small;
 }
 
 /* success message */
