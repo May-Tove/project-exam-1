@@ -21,6 +21,7 @@ textarea {
   background: transparent;
   cursor: text;
   font-family: "montserrat", sans-serif;
+  font-weight: 300;
 }
 
 textarea {
@@ -41,8 +42,8 @@ textarea {
 
 /* form error */
 .form-error {
+  font-family: var(--mainFont);
   color: red;
-  font-family: "montserrat", sans-serif;
   font-weight: 300;
   font-size: small;
 }

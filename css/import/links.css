@@ -1,41 +1,40 @@
-a{
-    text-decoration: none;
-    color: black;
-    font-family: "montserrat", sans-serif;
-    text-transform: uppercase;
-    letter-spacing: .1rem;
-    font-size: .9rem;
+a {
+  font-family: var(--mainFont);
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-size: 0.9rem;
 }
 
-.btn{
-    padding: .8rem 1.5rem;
-    background-color: var(--btnColor);
-    border: none;
-    color: white;
-    text-transform: uppercase;
-    text-align: center;
-    letter-spacing: .1rem;
-    font-family: "montserrat", sans-serif;
-    font-size: small;
-    cursor: pointer;
-    transition: 0.5s ease;
+.btn {
+  font-family: var(--mainFont);
+  padding: 0.8rem 1.5rem;
+  background-color: var(--btnColor);
+  border: none;
+  color: var(--mainWhiteColor);
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.1rem;
+  font-size: small;
+  cursor: pointer;
+  transition: 0.5s ease;
 }
 
-.btn:hover{
-    opacity: .8;
-    transition: 0.5s ease;
+.btn:hover {
+  opacity: 0.8;
+  transition: 0.5s ease;
 }
 
-.breadcrumbs{
-    padding-top: 3rem;
-    }
-    
-    .breadcrumbs a{
-        text-transform: capitalize;
-    }
-    
-    .active{
-        font-weight: bold;
-        color: var(--mainColor);
-    }
+.breadcrumbs {
+  padding-top: 3rem;
+}
 
+.breadcrumbs a {
+  text-transform: capitalize;
+}
+
+.active {
+  font-weight: bold;
+  color: var(--mainColor);
+}
