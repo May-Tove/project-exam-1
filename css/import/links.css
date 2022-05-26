@@ -4,7 +4,7 @@ a{
     font-family: "montserrat", sans-serif;
     text-transform: uppercase;
     letter-spacing: .1rem;
-    font-size: .8rem;
+    font-size: .9rem;
 }
 
 .btn{
@@ -31,12 +31,7 @@ a{
     }
     
     .breadcrumbs a{
-        color: black;
         text-transform: capitalize;
-    }
-
-    .breadcrumbs a.active{
-        color: var(--mainColorDarkened);
     }
     
     .active{
@@ -44,6 +39,3 @@ a{
         color: var(--mainColor);
     }
 
-    .active a{
-        color: var(--mainColor);
-    }

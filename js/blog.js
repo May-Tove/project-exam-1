@@ -21,7 +21,7 @@ async function getPosts(url) {
     });
   } catch (error) {
     postContainer.innerHTML = displayError(
-      "Ops! An error occurred trying to get all blog posts"
+      "Ops! An error occurred trying to get blog posts"
     );
   }
 }
