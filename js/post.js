@@ -35,7 +35,7 @@ function displayPost(details) {
   postActiveLink.innerHTML = `${details.title.rendered}`;
 
   // changing hero-image to match current post
-  heroContainer.innerHTML = `<div style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.4)), url(${details.acf.featured_image})" class="featured-img hero">
+  heroContainer.innerHTML = `<div style="background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.4)), url(${details.acf.featured_image})" class="featured-img hero">
                                 <h1>${details.title.rendered}</h1>
                             </div>`;
 

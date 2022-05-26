@@ -140,8 +140,8 @@
 /* carousel buttons*/
 .carousel-btn {
   position: absolute;
-  top: 40%;
-  transform: translateY(-40%);
+  top: 50%;
+  transform: translateY(-50%);
   background: none;
   background-color: transparent;
   border: none;
