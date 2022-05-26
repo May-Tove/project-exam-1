@@ -56,7 +56,7 @@ function displayPost(details) {
                                     <img src="${details.acf.memory_image.url}" alt="${details.acf.memory_image.title}" class="memory-img post-img" tabindex="0" />
                             </div>
                             <div class="city-section">
-                                <h2 class="section-title">Top four places to visit</h2>
+                                <h2 class="section-title">Top 4 places to visit</h2>
                                 <div class="city-1">
                                     <div class="city-text">
                                     <h3>${details.acf.city_heading_1}</h3>

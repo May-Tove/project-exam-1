@@ -15,11 +15,10 @@
 /* make loader and fetch error centered on page */
 .loader, .fetchError{
   position: absolute;
-  top: 25%;
 }
 
 .loader{
-  left: 46%;
+  left: 48%;
 }
 
 .fetchError{
@@ -91,6 +90,7 @@
 .post-container {
   width: 85vw;
   max-width: 900px;
+  min-height: 30vh;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   grid-column-gap: 1.5rem;
