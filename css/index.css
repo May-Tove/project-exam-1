@@ -1,6 +1,6 @@
 /* hero */
 .home-hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(../images/pexels-tomáš-malík-1670457.jpg);
   background-position: center;
   background-size: cover;
@@ -48,6 +48,7 @@
 
 .slide {
   min-width: 100%;
+  padding: .5rem;
   transition: transform 0.3s ease-in;
 }
 
@@ -94,6 +95,7 @@
   background: none;
   border: none;
   font-size: 2rem;
+  color: black;
   cursor: pointer;
   z-index: 10;
 }
@@ -119,7 +121,6 @@
   }
 
   .slide {
-    padding: .5rem;
     min-width: 50%;
   }
 
