@@ -57,6 +57,7 @@ textarea {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
   z-index: 1200;
+  display: none;
 }
 
 .success-message {
