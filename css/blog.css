@@ -12,6 +12,10 @@
   margin-bottom: 4rem;
 }
 
+.blog-container h2{
+  text-align: center;
+}
+
 /* make loader and fetch error centered on page */
 .loader, .fetchError{
   position: absolute;
@@ -78,6 +82,7 @@
 
 .post-nav .active{
   font-weight: bold;
+  color: var(--mainColor);
 }
 
 
