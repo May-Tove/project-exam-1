@@ -64,13 +64,13 @@
 
 .post-nav li {
   list-style: none;
-  color: black;
 }
 
 .post-nav button {
   font-family: var(--mainFont);
   font-size: .9rem;
   font-weight: 300;
+  color: black;
   cursor: pointer;
   background: transparent;
   border: 0;
