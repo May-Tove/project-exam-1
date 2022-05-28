@@ -12,23 +12,16 @@
   padding-bottom: 3rem;
 }
 
-.email-link{
-  color: var(--mainColorDarkened);
-  text-transform: none;
-  font-style: italic;
-  text-decoration: underline;
-}
-
 .input-group input,
 textarea {
+  font-family: var(--mainFont);
+  font-weight: 300;
   width: 100%;
   padding: 10px;
   margin-top: 5px;
   border: 1px solid black;
   background: transparent;
   cursor: text;
-  font-family: "montserrat", sans-serif;
-  font-weight: 300;
 }
 
 textarea {

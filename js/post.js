@@ -20,7 +20,7 @@ async function getPost() {
     displayPost(details);
   } catch (error) {
     postContainer.innerHTML = displayError(
-      "Ops! An error occurred trying to load the blog post"
+      "Oops! An error occurred trying to load the blog post"
     );
   }
 }

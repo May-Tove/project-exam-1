@@ -115,11 +115,6 @@
   font-size: 1.3rem;
 }
 
-.post:hover, .post:focus {
-  transform: scale(1.02);
-  box-shadow: var(--boxShadow);
-}
-
 .post .featured-img {
   background-size: cover;
   background-position: center;
@@ -132,7 +127,13 @@
 
 
 @media (min-width: 900px) {
+  /* hovering on blog posts */
+  .post:hover {
+    transform: scale(1.02);
+    box-shadow: var(--boxShadow);
+  }
 
+  /* layout change on filter and search */ 
   .filter-container {
     flex-direction: row;
     align-items: center;

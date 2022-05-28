@@ -1,16 +1,16 @@
 /* modal animation */
-@keyframes zoom{
-    from{
-        transform: scale(0);
-    }
-    to{
-        transform: scale(1);
-    }
+@keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
 }
 
 /* loader animation */
 @keyframes spin {
-    100% {
-      transform: rotate(360deg);
-    }
+  100% {
+    transform: rotate(360deg);
   }
+}

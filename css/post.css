@@ -19,11 +19,15 @@
   gap: 1rem;
 }
 
-/* intro */
-.intro-section h2 {
-  max-width: 800px;
+/* all images */
+.post-img {
+  width: 100%;
+  height: 370px;
+  transition: var(--transition);
+  object-fit: cover;
 }
 
+/* intro */
 .small-txt {
   font-style: italic;
   margin-bottom: 1rem;
@@ -32,13 +36,6 @@
 /* highlight section */
 .highlight-section {
   margin: 3rem 0;
-}
-
-.post-img {
-  width: 100%;
-  height: 370px;
-  transition: var(--transition);
-  object-fit: cover;
 }
 
 /* destination section */
@@ -76,7 +73,7 @@
 }
 
 .modal-txt {
-    font-family: var(--mainFont);
+  font-family: var(--mainFont);
   font-weight: 400;
   font-size: 1.2rem;
   text-align: center;

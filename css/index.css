@@ -16,7 +16,7 @@
 }
 
 .home-hero p {
-  font-size: .8rem;
+  font-size: 0.8rem;
   letter-spacing: var(--letterSpacing);
   text-transform: uppercase;
   color: var(--mainWhiteColor);
@@ -48,7 +48,7 @@
 
 .slide {
   min-width: 100%;
-  padding: .5rem;
+  padding: 0.5rem;
   transition: transform 0.3s ease-in;
 }
 
@@ -83,8 +83,8 @@
   letter-spacing: 0;
 }
 
-/* hide overlay on hover on larger screen size */
-.overlay{
+/* overlay will only show on hover on larger screen sizes */
+.overlay {
   opacity: 0;
 }
 
@@ -110,63 +110,60 @@
 }
 
 @media (min-width: 768px) {
-  .carousel-container{
+  .carousel-container {
     width: 80vw;
   }
   .next-btn {
     right: 4%;
   }
-  
+
   .prev-btn {
     left: 4%;
   }
 
+  /* width of slide */
   .slide {
     min-width: 50%;
   }
-
 }
 
 @media (min-width: 1000px) {
   /* hovering on posts */
-.slide h3 {
-  transition: var(--transition);
-}
-.slide:hover h3,
-.slide:focus h3 {
-  color: var(--mainColorDarkened);
-  transition: var(--transition);
-}
+  .slide h3 {
+    transition: var(--transition);
+  }
+  .slide:hover h3 {
+    color: var(--mainColorDarkened);
+    transition: var(--transition);
+  }
 
-.overlay {
-  background-color: rgba(0, 0, 0, 0.5);
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  transition: var(--transition);
-}
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: var(--transition);
+  }
 
-.overlay-title {
-  color: var(--mainWhiteColor);
-  min-width: 100%;
-}
+  .overlay-title {
+    color: var(--mainWhiteColor);
+    min-width: 100%;
+  }
 
-.slide:hover .overlay,
-.slide:focus .overlay {
-  opacity: 1;
-  transition: var(--transition);
-}
+  .slide:hover .overlay {
+    opacity: 1;
+    transition: var(--transition);
+  }
 
-.slide:hover .overlay-title,
-.slide:focus .overlay-title {
-  color: var(--mainWhiteColor);
-  transition: var(--transition);
-}
+  .slide:hover .overlay-title {
+    color: var(--mainWhiteColor);
+    transition: var(--transition);
+  }
 
-/* width of slide */
+  /* width of slide */
   .slide {
     min-width: 33.33%;
   }
@@ -176,13 +173,12 @@
   .next-btn {
     right: 1%;
   }
-  
+
   .prev-btn {
     left: 1%;
   }
-/* width of slide */
+  /* width of slide */
   .slide {
     min-width: 25%;
   }
-
 }

@@ -1,17 +1,16 @@
 a {
   font-family: var(--mainFont);
   font-size: 0.9rem;
-  text-transform: uppercase;
-  letter-spacing: 0.1rem;
+  letter-spacing: var(--letterSpacing);
   text-decoration: none;
   color: black;
 }
 
 /* active state of links */
 .active {
-    font-weight: bold;
-    color: var(--mainColor);
-  }
+  font-weight: bold;
+  color: var(--mainColor);
+}
 
 /* buttons */
 .btn {
@@ -19,7 +18,7 @@ a {
   font-size: small;
   text-transform: uppercase;
   text-align: center;
-  letter-spacing: 0.1rem;
+  letter-spacing: var(--letterSpacing);
   color: var(--mainWhiteColor);
   background-color: var(--btnColor);
   padding: 0.8rem 1.5rem;
@@ -40,10 +39,13 @@ a {
   gap: 2px;
 }
 
-.breadcrumbs li{
-    list-style: none;
+.breadcrumbs li {
+  list-style: none;
 }
 
-.breadcrumbs a {
-  text-transform: capitalize;
+/* email link on contact form */
+.email-link {
+  color: var(--mainColorDarkened);
+  font-style: italic;
+  text-decoration: underline;
 }

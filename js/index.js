@@ -66,7 +66,7 @@ async function getPosts(url) {
     });
   } catch (error) {
     postContainer.innerHTML = displayError(
-      "Ops! An error occurred trying to get latest posts"
+      "Oops! An error occurred trying to get latest posts"
     );
   }
 }
