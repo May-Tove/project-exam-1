@@ -27,12 +27,6 @@
   object-fit: cover;
 }
 
-.post-img:hover {
-    cursor: pointer;
-    transform: scale(1.01);
-    box-shadow: var(--boxShadow);
-  }
-
 /* intro */
 .small-txt {
   font-style: italic;
@@ -98,7 +92,11 @@
 }
 
 @media (min-width: 1200px) {
-
+  .post-img:hover {
+    cursor: pointer;
+    transform: scale(1.01);
+    box-shadow: var(--boxShadow);
+  }
 
   /* highlight section change of layout */
   .highlight-section {
