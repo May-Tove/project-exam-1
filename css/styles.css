@@ -18,7 +18,7 @@ h1, h3, p, label{
 }
 
 h1, h2, h3{
-    letter-spacing: .1rem;
+    letter-spacing: var(--letterSpacing);
 }
 
 h1{
@@ -39,14 +39,12 @@ h2{
 h3{
     font-size: 18px;
     font-weight: 800;
-    text-transform: uppercase;
     color: var(--mainColor);
 }
 
 p, label{
     font-size: 16px;
     font-weight: 300;
-    letter-spacing: .2px;
     line-height: 1.4rem;
 }
 
@@ -84,6 +82,7 @@ p, label{
     display: none;
 }
 .logo img{
+    width: 100%;
     max-width: 130px;
 }
 

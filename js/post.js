@@ -53,7 +53,7 @@ function displayPost(details) {
                                     <p>${details.acf.memory_paragraph}</p>
                                     <p>${details.acf.memory_paragraph_2}</p>
                                 </div>
-                                    <img src="${details.acf.memory_image.url}" alt="${details.acf.memory_image.title}" class="memory-img post-img" tabindex="0" />
+                                    <img src="${details.acf.memory_image.url}" alt="${details.acf.memory_image.title}" class="memory-img post-img" />
                             </div>
                             <div class="city-section">
                                 <h2 class="section-title">Top 4 places to visit</h2>

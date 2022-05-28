@@ -1,13 +1,12 @@
 :root{
-    --mainColor: #162B6F;
+    --mainColor: #5570B4;
     --mainColorDarkened: #162B6F;
     --mainLightColor:#fffffc;
     --headerFooterColor: #FFFEF7;
     --mainWhiteColor: #FFF;
     --btnColor: #000;
     --transition: all .3s;
-    --letterSpacing: .2rem;
+    --letterSpacing: .1rem;
     --boxShadow: rgba(0, 0, 0, 0.1) 0 20px 25px -5px, rgba(0, 0, 0, 0.04) 0 10px 10px -5px;
     --mainFont: "montserrat", sans-serif;
-
 }

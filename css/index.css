@@ -1,7 +1,7 @@
 /* hero */
 .home-hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)),
-    url(../images/artur-aldyrkhanov-7zf-bCnPOPw-unsplash.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
+    url(../images/hu-chen-3yd8oXGoLqM-unsplash.jpg);
   background-position: center;
   background-size: cover;
   justify-content: center;
@@ -17,7 +17,7 @@
 
 .home-hero p {
   font-size: .8rem;
-  letter-spacing: .2rem;
+  letter-spacing: var(--letterSpacing);
   text-transform: uppercase;
   color: var(--mainWhiteColor);
 }
@@ -82,7 +82,7 @@
   text-transform: none;
 }
 
-/* hide overlay on hover on larger screensize */
+/* hide overlay on hover on larger screen size */
 .overlay{
   opacity: 0;
 }

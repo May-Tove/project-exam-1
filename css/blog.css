@@ -9,11 +9,12 @@
   width: 85vw;
   max-width: 900px;
   margin: 0 auto;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
 }
 
-.blog-container h2{
+.blog-container .section-title{
   text-align: center;
+  margin-bottom: 3rem;
 }
 
 /* make loader and fetch error centered on page */
@@ -136,7 +137,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 3rem 0rem;
+    padding-bottom: 3rem;
   }
 
   .search-container{

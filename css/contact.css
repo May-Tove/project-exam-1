@@ -12,6 +12,13 @@
   padding-bottom: 3rem;
 }
 
+.email-link{
+  color: var(--mainColorDarkened);
+  text-transform: none;
+  font-style: italic;
+  text-decoration: underline;
+}
+
 .input-group input,
 textarea {
   width: 100%;
@@ -74,10 +81,6 @@ textarea {
   flex-direction: column;
   align-items: center;
   gap: 1rem;
-}
-
-.success-message h3 {
-  color: black;
 }
 
 @media (min-width: 1200px) {
