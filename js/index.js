@@ -71,17 +71,3 @@ async function getPosts(url) {
   }
 }
 getPosts(baseUrl);
-
-// video
-const switchBtn = document.querySelector(".switch-btn");
-const video = document.querySelector(".video-container");
-
-switchBtn.addEventListener("click", function () {
-  if (!btn.classList.contains("slide")) {
-    btn.classList.add("slide");
-    video.pause();
-  } else {
-    btn.classList.remove("slide");
-    video.play();
-  }
-});
