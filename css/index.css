@@ -80,6 +80,7 @@
 
 .slide p {
   text-transform: none;
+  letter-spacing: 0;
 }
 
 /* hide overlay on hover on larger screen size */

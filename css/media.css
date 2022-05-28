@@ -12,6 +12,10 @@
     font-size: 22px;
   }
 
+  .home-hero p{
+    font-size: 1rem;
+  }
+
   /* main navigation */
   .logo img {
     max-width: 190px;
