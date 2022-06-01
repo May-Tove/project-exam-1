@@ -2,8 +2,6 @@
 
 <img width="1440" alt="globetrotter" src="https://user-images.githubusercontent.com/89157761/171418817-7c575ddf-bb65-459f-95cc-fe82f6dd0f4f.png">
 
-A simple overview of the use/purpose of the project.
-
 ## Description
 
 This was my project exam 1 where the goal was to put into practice the skills learned over my first year of studies.
@@ -38,4 +36,8 @@ The project contained the following tasks:
 
 - [My LinkedIn page](www.linkedin.com/in/may-tove-hovdal-24b406153)
 - maytoveh@gmail.com
+
+## Link to website
+
+https://lambent-trifle-5bffa7.netlify.app
 
