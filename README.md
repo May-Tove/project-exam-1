@@ -7,7 +7,7 @@ A simple overview of the use/purpose of the project.
 ## Description
 
 This was my project exam 1 where the goal was to put into practice the skills learned over my first year of studies.
-The task was to create a blog site where we could choose the theme ourselfes. The site should have at least the following pages:
+The task was to create a blog site where we could choose the theme ourselves. The site should have at least the following pages:
 
 - Home page
 - About page
@@ -15,7 +15,7 @@ The task was to create a blog site where we could choose the theme ourselfes. Th
 - Blog post specific pages
 - Contact page.
 
-The blog posts for the website is stored on a WordPress installation used as a Headless CMS. The website itself is built using HTML, CSS and JavaScript and making a call to the WordPress REST API to fetch the data. The site has numerous functionalities built with JavaScript such as a carousel, image modal, contact form validation, search for blog poasts and filtering by category.
+The blog posts for the website are stored on a WordPress installation used as a Headless CMS. The website itself is built using HTML, CSS and JavaScript and making a call to the WordPress REST API to fetch the data. The site has numerous functionalities built with JavaScript such as a carousel, image modal, contact form validation, search for blog posts and filtering by category.
 
 The project contained the following tasks:
 
