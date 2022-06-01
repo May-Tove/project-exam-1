@@ -1,6 +1,6 @@
 # Globetrotter | Travel Blog
 
-<img width="1440" alt="globetrotter" src="https://user-images.githubusercontent.com/89157761/171418817-7c575ddf-bb65-459f-95cc-fe82f6dd0f4f.png">
+![Skjermbilde 2022-06-01 kl  17 24 18](https://user-images.githubusercontent.com/89157761/171441100-eca75b8e-84f7-4dc0-9814-dc1df6236044.png)
 
 ## Description
 
