@@ -2,6 +2,10 @@
 
 ![Skjermbilde 2022-06-01 kl  17 24 18](https://user-images.githubusercontent.com/89157761/171441100-eca75b8e-84f7-4dc0-9814-dc1df6236044.png)
 
+### Hosted on Netlify
+
+[Live site](https://globetrotter-travel-blog.netlify.app/about.html)
+
 ## Description
 
 This was my project exam 1 where the goal was to put into practice the skills learned over my first year of studies.
@@ -36,8 +40,4 @@ The project contained the following tasks:
 
 - [Linkedin](https://www.linkedin.com/in/may-tove-hovdal-24b406153/)
 - maytoveh@gmail.com
-
-## Link to website
-
-https://lambent-trifle-5bffa7.netlify.app
 
