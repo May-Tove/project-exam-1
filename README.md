@@ -35,6 +35,7 @@ The project contained the following tasks:
 - HTML
 - CSS
 - JavaScript
+- WordPress REST API
 
 ## Contact
 
